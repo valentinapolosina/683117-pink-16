@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валентина Полосина](https://up.htmlacademy.ru/adaptive/16/user/683117).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Майстренко](https://htmlacademy.ru/profile/natalie).
 
 ---
 
