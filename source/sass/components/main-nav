@@ -1,0 +1,10 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 32px;
+  background-color: #283645;
+}
+
+.site-list__link {
+  color:#ffffff;
+}
+
