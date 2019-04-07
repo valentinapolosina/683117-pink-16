@@ -4,35 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo"></a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="competition.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
-      </div>
+    <div class="page-header__сontainer container">
+      <a class="page-header__logo">
+        <span class="page-header__image page-header__image--mobile"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="22" viewBox="0 0 75 22"></svg></span>
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="competition.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
+        </div>
+    </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - сайт мобильного приложения</h1>
     <section class="page-main__intro page-intro">
-      <img class="page-intro__picture" alt="Изображение телефона с открытым приложением">
+      <img class="page-intro__picture" src="" alt="Изображение телефона с открытым приложением">
       <a class="button page-intro__button" href="#">Скачать приложение</a>
       <ul class="page-intro__list available-list">
         <li class="available-list-item">
@@ -54,7 +59,7 @@
       <header class="features__header">
         <h2 class="features__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
       </header>
-      <ul class="features__list">
+      <ul class="features__list features">
         <li class="features__item">
           <h3 class="features__name">Поднимает настроение</h3>
           <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
