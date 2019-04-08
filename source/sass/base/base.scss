@@ -6,7 +6,8 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  min-width: 320px;
+  width: 320px;
+  color: #283645;
 }
 
 a {
@@ -31,4 +32,6 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 280px;
+  margin: 0 auto;
+  padding: 0;
 }

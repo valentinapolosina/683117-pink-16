@@ -1,0 +1,21 @@
+.page-main__intro {
+  background-color: #1d2631;
+
+}
+
+.page-main__info {
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -64px;
+  display: flex;
+
+}
+
+.page-main__description {
+  font-family: $Sans-Light;
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}

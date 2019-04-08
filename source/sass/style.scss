@@ -1,4 +1,13 @@
-@import "base.scss";
-@import "header.scss";
-@import "main-nav";
-@import "style-list.scss";
+@import "base/variables.scss";
+@import "base/base.scss";
+@import "base/fonts.scss";
+@import "components/header.scss";
+@import "components/main-nav.scss";
+@import "components/site-list.scss";
+@import "components/page-intro.scss";
+@import "components/section.scss";
+@import "components/available-list.scss";
+@import "components/features.scss";
+@import "components/page-footer.scss";
+@import "components/social-list.scss";
+@import "components/photo.scss"

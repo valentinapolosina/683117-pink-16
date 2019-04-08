@@ -1,0 +1,38 @@
+.features__slogan {
+  font-family: $Sans-Light;
+  font-size: 24px;
+  color: #283645;
+  font-weight: normal;
+  text-align: center;
+}
+
+.features__slogan--one {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.features__slogan--two {
+  display: block;
+  padding-top: 10px;
+}
+
+.features__list {
+  list-style: none;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.features__name {
+  font-family: $Sans-Bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.features__info {
+  width: 281px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

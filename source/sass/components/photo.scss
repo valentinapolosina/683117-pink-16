@@ -1,0 +1,76 @@
+.photo__description {
+  color: #283645;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo__picture--day {
+  position: relative;
+}
+
+.photo__wrapper {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.photo-list__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.photo__username {
+  font-family: $Sans-Bold;
+  padding: 0;
+  margin: 0;
+}
+
+.photo__activity {
+  font-family: $Sans-Light;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.photo__username-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.photo__comment {
+  padding: 0;
+  margin: 0;
+}
+
+.photo__like {
+  margin: 0;
+  padding: 0;
+  color: #d22856;
+}
+
+.photo__button-and-like {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo_like-button {
+  background: 0 0;
+  border: 0;
+}
+
+.photo__heart {
+  fill: #d53e67;
+}
+
