@@ -1,0 +1,36 @@
+body {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $Open-Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 320px;
+  color: #283645;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
