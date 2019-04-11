@@ -2,6 +2,18 @@
   padding: 10px;
   padding-left: 75px;
   padding-right: 74px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__developers {
@@ -11,7 +23,9 @@
 }
 
 .page-footer__logo-developers {
-  fill: #d63963;
+  fill: $light-pink;
   width: 27px;
   padding-top: 10px;
 }
+
+

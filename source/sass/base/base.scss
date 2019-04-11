@@ -3,11 +3,11 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: $Open-Sans;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  width: 320px;
-  color: #283645;
+  min-width: 320px;
+  color: $dark-blue;
 }
 
 a {
@@ -30,7 +30,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
 }
