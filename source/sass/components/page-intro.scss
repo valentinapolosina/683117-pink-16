@@ -8,6 +8,7 @@
   border: 3px solid $white;
   padding: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .page-intro__list {
@@ -19,4 +20,19 @@
   color: $white;
   text-align: center;
   padding: 20px;
+  width: 300px;
+}
+
+.page-intro__header {
+  display: none;
+  font-weight: 300;
+  font-size: 40px;
+  color: $white;
+  line-height: 35px;
+
+  @media(min-width: $tablet-width) {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
 }
