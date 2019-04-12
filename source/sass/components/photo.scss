@@ -30,6 +30,8 @@
 
   &--day {
     position: relative;
+    width: 100%;
+    height: auto;
   }
 
 }
@@ -37,13 +39,14 @@
 .photo__wrapper {
   background-color: $dark-white;
   padding: 10px;
+  width: 280px;
+  box-sizing: border-box;
 
   @media(min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 260px;
 
   }
 
@@ -56,6 +59,9 @@
 .photo-wrapper--day {
   width: 100%;
   flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: auto;
 }
 
 .photo__username {
