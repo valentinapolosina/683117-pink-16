@@ -22,9 +22,9 @@
           </svg>
         </span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list main-nav__list--open">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -38,7 +38,7 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Закрыть/открыть меню</button>
         </div>
     </div>
     </nav>
@@ -266,5 +266,21 @@
   </footer>
   <div></div>
 </body>
+<script>
+  var navMainList = document.querySelector('.main-nav__list');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var navMain = document.querySelector('.main-nav');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    navToggle.classList.toggle('main-nav__toggle--closed');
+    if (navMainList.classList.contains('main-nav__list--open')) {
+      navMainList.classList.remove('main-nav__list--open');
+    } else {
+      navMainList.classList.add('main-nav__list--open');
+    }
+  });
+</script>
 
 </html>

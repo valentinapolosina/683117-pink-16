@@ -22,7 +22,7 @@
           </svg>
         </span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list main-nav__list--open">
             <li class="site-list__item">
@@ -38,7 +38,7 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">Закрыть/открыть меню</button>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Закрыть/открыть меню</button>
         </div>
     </div>
     </nav>
@@ -91,15 +91,15 @@
         <h3 class="features__slogan"><span class="features-slogan--one">Устали от серости мегаполиса?</span><span class="features__slogan--two">Нам есть, что вам предложить!</span></h3>
       </header>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--mood">
           <h4 class="features__name">Поднимает настроение</h4>
           <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--change">
           <h4 class="features__name">Меняет мир вокруг</h4>
           <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
-        <li class="features__item features__item--img">
+        <li class="features__item features__item--friends">
           <h4 class="features__name">Заводит новых друзей</h4>
           <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
@@ -107,12 +107,16 @@
     </section>
     <section class="page-main__analysis analysis">
       <div class="analysis__item">
-        <h3 class="analysis__name">Эффект на 24 часа!</h3>
+        <h3 class="analysis__name">Эффект &nbsp; на 24 часа!</h3>
         <p class="analysis__description">Британские ученые провели исследования и
           доказали,
-          что положительный эффект от использования приложения длится целые сутки!</p>
+          что положительный эффект &nbsp; от использования приложения длится целые сутки!</p>
         <a class="analysis__link" href="#">Узнать больше об исследовании</a>
       </div>
+      <svg class="analysis__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="253px" height="253px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
+  <path d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+</svg>
+
     </section>
     <section class="page-main__comment comment">
       <h4 class="visually-hidden">Отзывы пользователей</h4>
@@ -264,19 +268,21 @@
     </div>
   </footer>
 </body>
+
+
 <script>
-  var navMain = document.querySelector('.main-nav');
+  var navMainList = document.querySelector('.main-nav__list');
   var navToggle = document.querySelector('.main-nav__toggle');
+  var navMain = document.querySelector('.main-nav');
 
   navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+    navToggle.classList.toggle('main-nav__toggle--closed');
+    if (navMainList.classList.contains('main-nav__list--open')) {
+      navMainList.classList.remove('main-nav__list--open');
     } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
+      navMainList.classList.add('main-nav__list--open');
     }
   });
 </script>

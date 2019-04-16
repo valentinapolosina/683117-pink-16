@@ -50,8 +50,13 @@
   flex-direction: column;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
   @media(min-width: $desktop-width) {
     flex-direction: row;
+    padding-top: 300px;
   }
 }
 
@@ -59,12 +64,25 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    width: 221px;
+  }
 }
 
 .features__info {
   width: 281px;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 238px;
+  }
 }
 
 .features__item {
@@ -72,6 +90,7 @@
   flex-direction: column;
   align-items: center;
   margin-left: auto;
+  position: relative;
 
 
   @media(min-width: $desktop-width) {
@@ -80,7 +99,7 @@
 }
 
 
-.features__item--img::after {
+.features__item--friends::after {
 
   content: "";
   display: block;
@@ -91,13 +110,6 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.features__list::after {
-
-  @media (min-width: $tablet-width) {
     content: "";
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
     position: absolute;
@@ -105,7 +117,49 @@
     background-repeat: no-repeat;
     width: 282px;
     height: 514px;
-    left: 0;
-    top: 12px;
+    right: 350px;
+    bottom: -117px;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url(../img/iphone-screen-3-desktop@1x.png);
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 643px;
+    left: 0;
+  }
+}
+
+.features__item--change::after {
+
+@media (min-width: $desktop-width) {
+   content: "";
+    background-image: url(../img/iphone-screen-2-desktop@1x.png);
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 316px;
+    bottom: 211px;
+    left: 0;
+  }
+}
+
+.features__item--mood::after {
+
+@media (min-width: $desktop-width) {
+
+  content: "";
+    background-image: url(../img/iphone-screen-1-desktop@1x.png);
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 316px;
+    bottom: 211px;
+    left: 0;
+}
 }
