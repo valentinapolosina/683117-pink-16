@@ -24,7 +24,7 @@
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list main-nav__list--open">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Главная</a>
             </li>
@@ -38,7 +38,7 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
+          <button class="main-nav__toggle" type="button">Закрыть/открыть меню</button>
         </div>
     </div>
     </nav>
@@ -48,10 +48,10 @@
     <section class="page-main__intro page-intro">
       <h2 class="page-intro__header page-intro__header--index">Взгляните на жизнь иначе!</h2>
       <picture>
-      <source media="(min-width: 960px)" srcset="../img/iphone-hand-desktop@1x.png">
-      <source media="(min-width: 660px)" srcset="../img/iphone-hand-tablet@1x.png">
-      <img src="../img/iphone-hand-mobile@1x.png" alt="Фотография руки с телефоном">
-    </picture>
+        <source media="(min-width: 960px)" srcset="../img/iphone-hand-desktop@1x.png">
+        <source media="(min-width: 660px)" srcset="../img/iphone-hand-tablet@1x.png">
+        <img src="../img/iphone-hand-mobile@1x.png" alt="Фотография руки с телефоном">
+      </picture>
       <a class="button page-intro__button container" href="#">Скачать приложение</a>
       <ul class="page-intro__list available-list">
         <li class="available-list-item">
@@ -99,13 +99,185 @@
           <h4 class="features__name">Меняет мир вокруг</h4>
           <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--img">
           <h4 class="features__name">Заводит новых друзей</h4>
           <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
     </section>
+    <section class="page-main__analysis analysis">
+      <div class="analysis__item">
+        <h3 class="analysis__name">Эффект на 24 часа!</h3>
+        <p class="analysis__description">Британские ученые провели исследования и
+          доказали,
+          что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="analysis__link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    <section class="page-main__comment comment">
+      <h4 class="visually-hidden">Отзывы пользователей</h4>
+      <ul class="comment__list">
+        <li class="comment__item">
+          <p class="comment__author">Николай Петров</p>
+          <p class="comment__information-author">25 лет, водитель трамвая</p>
+          <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+            на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»
+          </p>
+        </li>
+      </ul>
+      <div class="comment__sliders-wrapper">
+        <input class="visually-hidden comment__sliders-button comment__sliders-button--active" type="radio" name="slider" value="comment1-radio" id="comment1-radio" checked>
+        <input class="visually-hidden comment__sliders-button" type="radio" name="slider" value="comment2-radio" id="comment2-radio">
+        <input class="visually-hidden comment__sliders-button" type="radio" name="slider" value="comment3-radio" id="comment3-radio">
+        <div class="comment__sliders-arrows">
+          <label for="comment1-radio" class="comment__sliders-arrow-left comment__sliders-arrow"><span class="visually-hidden">Предыдущий</span></label>
+          <label for="comment2-radio" class="comment__sliders-arrow-right comment__sliders-arrow"><span class="visually-hidden">Следующий</span></label>
+        </div>
+        <div class="comment__sliders-circle">
+          <label for="comment1-radio" class="comment__sliders-circle-left comment__sliders-circle"><span class="visually-hidden">Первый комментарий</span></label>
+          <label for="comment2-radio" class="comment__sliders-circle-center comment__sliders-circle"><span class="visually-hidden">Второй комментарий</span></label>
+          <label for="comment2-radio" class="coment__sliders-circle-right comment__sliders-circle"><span class="visually-hidden">Третий комментарий</span></label>
+        </div>
+    </section>
+    <section class="page-main__price price">
+      <div class="price__wrapper">
+        <h4 class="visually-hidden">Тарифы и цены</h4>
+        <table class="price__table">
+          <tr class="price__column">
+            <td class="price__title price__name visually-hidden">Тариф</td>
+            <td class="price__title price__name">База</td>
+            <td class="price__title price__name">Стандарт</td>
+            <td class="price__title price__name">Анлим</td>
+          </tr>
+          <tr class="price__column">
+            <td class="price__title visually-hidden">Цена</td>
+            <td class="price__title  price__cost">1,99 USD</td>
+            <td class="price__title  price__cost">3,99 USD</td>
+            <td class="price__title  price__cost">9,99 USD</td>
+          </tr>
+          <tr>
+            <td class="price__column price__column--name">
+              Розовый фильтр
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          <tr>
+            <td class="price__column price__column--name">
+              Смайлики
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__column price__column--name">
+              Комментарии
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          </tr>
+        </table>
+        <div class="price-slider__wrapper">
+          <button class="price-slider__toggle" type="button">1</button>
+          <button class="price-slider__toggle price-slider__toggle--active" type="button">2</button>
+          <button class="price-slider__toggle" type="button">3</button>
+        </div>
+        </table>
+      </div>
+    </section>
+    <section class="page-main__contacts contacts">
+      <div class="contacts__wrapper">
+        <h5 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h5>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h6 class="contacts__title">Звоните:</h6>
+            <a href="tel:+78125556666" class="contacts__number">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <h6 class="contacts__title">Пишите:</h6>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h6 class="contacts__title">Приезжайте в гости:</h6>
+            <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__map map">
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.084044706823!2d30.31965248853345!3d59.93974130023607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541420177181"></iframe>
+    </section>
   </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="картинка очков пинк">
+    <ul class="page-footer__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#" aria-label="Твиттер">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <g id="W6EeEF_1_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href='#' aria-label="Фейсбук">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href='#' aria-label="Ютуб">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__developers">
+      <p class="page-footer__name">Разработано</p><span><svg class="page-footer__logo-developers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg></span>
+    </div>
+  </footer>
 </body>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
 
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </html>

@@ -26,16 +26,6 @@
 
 }
 
-.photo__picture {
-
-  &--day {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-
-}
-
 .photo__wrapper {
   background-color: $dark-white;
   padding: 10px;
@@ -47,11 +37,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-
-  }
-
-  &--day {
-    width: 98%;
 
   }
 }
@@ -86,10 +71,6 @@
 .photo__comment {
   padding: 0;
   margin: 0;
-
-  &--day {
-    order: 1;
-  }
 }
 
 .photo__like {

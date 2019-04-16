@@ -14,9 +14,9 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
-    margin-top: -89px;
-    background-position-y: 19px;
     padding-bottom: 24px;
+    padding-top: 60px;
+    background-position: center;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,27 +4,24 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .photo-list__item {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  justify-content: flex-start;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: 0 0 21px;
-  }
-
-  &--day {
-    width: 100%;
-    height: auto;
-    padding: 0;
+    margin: 0 auto 21px;
   }
 }

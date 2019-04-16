@@ -17,6 +17,12 @@
 .site-list__link {
   color: $white;
   text-transform: uppercase;
+    background-color: $dark-blue;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $light-blue;
+    display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
 }
 
 .site-list__item {

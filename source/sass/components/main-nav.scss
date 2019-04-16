@@ -2,9 +2,11 @@
   font-size: 18px;
   line-height: 32px;
   background-color: $dark-blue;
+    min-height: 51px;
+
 
   @media (min-width: $desktop-width) {
-    background: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 }
 
@@ -14,6 +16,19 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
+  top: -68px;
   right: 0;
+  height: 66px;
+
+  border: none;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+    top: -110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
