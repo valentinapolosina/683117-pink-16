@@ -1,9 +1,9 @@
 .page-intro {
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 
 
   @media (min-width: $tablet-width) {
@@ -37,8 +37,9 @@
   font-weight: 400;
   color: $white;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   width: 300px;
+  margin: 0;
 }
 
 .page-intro__header {
@@ -52,5 +53,23 @@
     display: inline-block;
     width: 240px;
     text-align: center;
+    position: absolute;
+    left: 54px;
+    top: 119px;
+  }
+}
+
+.page-intro__wrapper {
+  width: 100%;
+  background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    bottom: 259px;
+    left: -187px;
+    position: absolute;
   }
 }
