@@ -41,7 +41,6 @@
 
 .features__list {
   list-style: none;
-  background-color: $dark-white;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -49,15 +48,23 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-top: 300px;
   }
+
+}
+
+.features__wrapper {
+  background-color: $dark-white;
+  padding-top: 55px;
 }
 
 .features__name {
@@ -135,8 +142,8 @@
 
 .features__item--change::after {
 
-@media (min-width: $desktop-width) {
-   content: "";
+  @media (min-width: $desktop-width) {
+    content: "";
     background-image: url(../img/iphone-screen-2-desktop@1x.png);
     position: absolute;
     background-position: top;
@@ -150,9 +157,9 @@
 
 .features__item--mood::after {
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
 
-  content: "";
+    content: "";
     background-image: url(../img/iphone-screen-1-desktop@1x.png);
     position: absolute;
     background-position: top;
@@ -161,5 +168,11 @@
     height: 316px;
     bottom: 211px;
     left: 0;
+  }
 }
+
+.features__svg {
+  fill: white;
+  position: relative;
+  bottom: -54px;
 }

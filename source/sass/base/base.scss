@@ -30,8 +30,28 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  min-width: 280px;
+  width: 280px;
   margin: 0 auto;
   padding: 0;
   max-width: 1200px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
 }

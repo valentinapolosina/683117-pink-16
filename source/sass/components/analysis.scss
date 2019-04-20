@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    background-color: $dark-white;
   }
 }
 
@@ -16,6 +17,7 @@
   width: 172px;
   margin-left: auto;
   margin-right: 126px;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
@@ -28,7 +30,6 @@
   font-size: 14px;
   line-height: 24px;
   width: 296px;
-  margin-left: auto;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
@@ -38,6 +39,7 @@
 }
 
 .analysis__link {
+  margin: 0;
   margin-left: auto;
   text-decoration: underline;
   color: $light-red;
@@ -48,12 +50,17 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
+  width: 320px;
+  margin-left: auto;
 }
 
 .analysis__svg {
   display: inline-block;
   position: absolute;
-  fill: $light-red;
+  top: 15px;
+  left: 20px;
+  top: -26px;
+  left: -300px;
+  height: 280px;
 }

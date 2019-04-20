@@ -1,0 +1,220 @@
+.editor__form {
+  background-color: $dark-white;
+}
+
+.editor__photo {
+  text-align: center;
+  display: block;
+
+  @media (min-width: $tablet-width) {}
+}
+
+.editor__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 153px;
+  }
+}
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.editor__wrapper-main {
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    display: flex;
+    padding-left: 14%;
+  }
+}
+
+.editor__button {
+  display: block;
+  margin: 0 auto;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.editor__svg {
+  fill: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    height: 24px;
+    width: 24px;
+    fill: $light-red;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 44px;
+    width: 44px;
+  }
+}
+
+.editor__svg--active {
+  fill: $light-red;
+}
+
+.editor__range-list {
+  list-style: none;
+}
+
+.editor__scale-items {
+  margin-left: 25px;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 73px;
+    padding-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
+}
+
+.editor__control {
+  position: relative;
+  border-bottom: 1px solid $light-white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 296px;
+    right: 50px;
+  }
+}
+
+.editor__scale {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  background-color: $dark-blue;
+
+  @media (min-width: 660px) {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: 960px) {
+    width: 241px;
+  }
+}
+
+.editor__toggle {
+  position: absolute;
+  right: 55px;
+  top: -5px;
+  height: 10px;
+  width: 10px;
+  background-color: $dark-white;
+  border: 2px solid $light-red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.editor__control--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.editor__pushbutton {
+  width: 280px;
+  background-color: transparent;
+  outline: none;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-right: 12px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 183px;
+    border-radius: 30px;
+    margin-right: 20px;
+  }
+
+}
+
+.editor__pushbutton--send {
+  color: $light-red;
+  border: 3px solid $light-red;
+}
+
+.editor__pushbutton--cancel {
+  border: 3px solid transparentize($dark-blue, 0.9);
+  color: transparentize($dark-blue, 0.9);
+}
+
+.editor__wrapper-scale-and-button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+.editor__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.editor__toggle--crop {
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {
+    right: 66%;
+  }
+}
+
+.editor__toggle--fill {
+  @media (min-width: $tablet-width) {
+    right: 58%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18%;
+  }
+}
+
+.editor__toggle--contrast {
+  @media (min-width: $tablet-width) {
+    right: 33%;
+  }
+
+  @media (min-width: $desktop-width) {}
+
+}

@@ -49,6 +49,7 @@ position: absolute;
 }
   &--open {
     display: block;
+     z-index: 2;
 
     @media (min-width: $desktop-width) {
   display: flex;

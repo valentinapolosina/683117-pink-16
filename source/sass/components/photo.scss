@@ -1,9 +1,4 @@
 .photo__description {
-  color: $dark-blue;
-  line-height: 30px;
-  font-size: 14px;
-  font-weight: normal;
-  text-align: center;
   padding: 10px;
   padding-left: 38px;
   padding-right: 38px;
@@ -31,6 +26,7 @@
   padding: 10px;
   width: 280px;
   box-sizing: border-box;
+  flex-grow: 1;
 
   @media(min-width: $tablet-width) {
     display: flex;
@@ -82,6 +78,7 @@
 .photo__button-and-like {
   display: flex;
   flex-direction: row;
+  margin-top: auto;
 
   @media(min-width: $tablet-width) {
     flex-direction: row-reverse;
