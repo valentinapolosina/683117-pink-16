@@ -10,7 +10,8 @@
 }
 
 .editor__list {
-  padding: 0;
+  position: relative;
+  padding: 0 0 15px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -26,13 +27,12 @@
 }
 
 .editor__wrapper {
-  display: flex;
-  flex-direction: column;
+
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -100,13 +100,19 @@
 }
 
 .editor__control {
-  position: relative;
+  position: absolute;
   border-bottom: 1px solid $light-white;
+  top: 100%;
+  left: 0;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    margin-bottom: 25px;
     width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
   }
 }
 
@@ -114,12 +120,12 @@
   width: 240px;
   height: 2px;
   margin: 0 auto;
-  margin-bottom: 34px;
   background-color: $dark-blue;
 
   @media (min-width: 660px) {
     width: 200px;
     margin-right: 20px;
+
   }
 
   @media (min-width: 960px) {
@@ -219,4 +225,9 @@
 
   @media (min-width: $desktop-width) {}
 
+}
+
+.editor__item {
+  display: flex;
+      align-items: center;
 }
