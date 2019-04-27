@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header page-header--index">
-    <div class="page-header__сontainer">
+    <div class="page-header__сontainer container">
       <a class="page-header__logo">
         <span class="page-header__image page-header__image--mobile"><svg class="page-header__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
@@ -21,9 +22,9 @@
           </svg>
         </span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list main-nav__list--open">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Главная</a>
             </li>
@@ -37,8 +38,7 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
-          <img class="page-header__picture" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Изображение телефона с открытым приложением">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Закрыть/открыть меню</button>
         </div>
     </div>
     </nav>
@@ -46,60 +46,254 @@
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - сайт мобильного приложения</h1>
     <section class="page-main__intro page-intro">
-      <a class="button page-intro__button container" href="#">Скачать приложение</a>
-      <ul class="page-intro__list available-list">
-        <li class="available-list-item">
-          <a class="available-list-link available-list-link--iphone" href="#">
-            <span class="visually-hidden">Скачать для Айфона</span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
-              <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062" />
-            </svg>
-          </a>
-        </li>
-        <li class="available-list-item">
-          <a class="available-list-link available-list-link--android" href="#">
-            <span class="visually-hidden">Скачать для Андроид</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
-              <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z" />
-              <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z" />
-              <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z" />
-              <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z" />
-            </svg>
-          </a>
-        </li>
-        <li class="available-list-item">
-          <a class="available-list-link available-list-link--windows" href="#">
-            <span class="visually-hidden">Скачать для Windows</span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
-              <g>
-                <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z" />
-                <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z" />
-                <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z" />
-                <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p class="page-intro__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="page-intro__wrapper-picture-and-button container">
+        <picture class="page-intro__picture">
+          <source media="(min-width: 960px)" srcset="../img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="../img/iphone-hand-tablet@1x.png">
+          <img class="page-intro__picture-hand" src="../img/iphone-hand-mobile@1x.png" alt="Фотография руки с телефоном">
+        </picture>
+        <div class="page-intro__wrapper">
+          <h2 class="page-intro__header page-intro__header--index">Взгляните на жизнь иначе!</h2>
+          <a class="button page-intro__button" href="#">Скачать приложение</a>
+          <ul class="page-intro__list available-list">
+            <li class="available-list__item">
+              <a class="available-list__link available__list-link--iphone" href="#">
+                <span class="visually-hidden">Скачать для Айфона</span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062" />
+                </svg>
+              </a>
+            </li>
+            <li class="available-list__item">
+              <a class="available-list__link available-list__link--android" href="#">
+                <span class="visually-hidden">Скачать для Андроид</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
+                  <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z" />
+                  <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z" />
+                  <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z" />
+                  <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z" />
+                </svg>
+              </a>
+            </li>
+            <li class="available-list__item">
+              <a class="available-list__link available-list__link--windows" href="#">
+                <span class="visually-hidden">Скачать для Windows</span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
+                  <g>
+                    <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z" />
+                    <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z" />
+                    <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z" />
+                    <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="page-intro__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
     </section>
     <section class="page-main__features features">
       <header class="features__header">
-        <h2 class="features__slogan"><span class="features-slogan--one">Устали от серости мегаполиса?</span><span class="features__slogan--two">Нам есть, что вам предложить!</span></h2>
+        <h3 class="features__slogan"><span class="features-slogan--one">Устали от серости мегаполиса?</span><span class="features__slogan--two">Нам есть, что вам предложить!</span></h3>
       </header>
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="features__name">Поднимает настроение</h3>
-          <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__name">Меняет мир вокруг</h3>
-          <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__name">Заводит новых друзей</h3>
-          <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
+      <div class="features__wrapper">
+        <ul class="features__list container">
+          <li class="features__item features__item--mood">
+            <h4 class="features__name">Поднимает настроение</h4>
+            <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item features__item--change">
+            <h4 class="features__name">Меняет мир вокруг</h4>
+            <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item features__item--friends">
+            <h4 class="features__name">Заводит новых друзей</h4>
+            <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__analysis analysis">
+      <div class="analysis__item">
+        <div class="analysis__item--wrapper">
+          <h3 class="analysis__name">Эффект &nbsp; на 24 часа!</h3>
+          <p class="analysis__description">Британские ученые провели исследования и
+            доказали,
+            что положительный эффект &nbsp; от использования приложения длится целые сутки!</p>
+          <a class="analysis__link" href="#">Узнать больше об исследовании</a>
+        </div>
+        <svg class="analysis__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298" height="345" viewBox="0 0 298 345">
+          <metadata>
+            <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:Description rdf:about="" />
+              </rdf:RDF>
+            </x:xmpmeta>
+            <?xpacket end="w"?>
+          </metadata>
+          <image id="diagram-fill.svg" width="298" height="345" xlink:href="data:img/png;base64,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" />
+        </svg>
+      </div>
+    </section>
+    <section class="page-main__comment comment container">
+      <h4 class="visually-hidden">Отзывы пользователей</h4>
+      <blockquote class="comment__list">
+        <cite class="comment__author">Николай Петров</cite>
+        <span class="comment__information-author">25 лет, водитель трамвая</span>
+        <p class="comment__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+          на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+          фотографии!»
+        </p>
+      </blockquote>
+      <div class="comment__sliders-wrapper">
+        <input class="visually-hidden comment__sliders-button comment__sliders-button--active" type="radio" name="slider" value="comment1-radio" id="comment1-radio" checked>
+        <input class="visually-hidden comment__sliders-button" type="radio" name="slider" value="comment2-radio" id="comment2-radio">
+        <input class="visually-hidden comment__sliders-button" type="radio" name="slider" value="comment3-radio" id="comment3-radio">
+        <div class="comment__sliders-arrows">
+          <label for="comment1-radio" class="comment__sliders-arrow-left comment__sliders-arrow"><span class="visually-hidden">Предыдущий</span></label>
+          <label for="comment2-radio" class="comment__sliders-arrow-right comment__sliders-arrow"><span class="visually-hidden">Следующий</span></label>
+        </div>
+        <div class="comment__sliders-circle">
+          <label for="comment1-radio" class="comment__sliders-circle-left comment__sliders-circle"><span class="visually-hidden">Первый комментарий</span></label>
+          <label for="comment2-radio" class="comment__sliders-circle-center comment__sliders-circle"><span class="visually-hidden">Второй комментарий</span></label>
+          <label for="comment2-radio" class="coment__sliders-circle-right comment__sliders-circle"><span class="visually-hidden">Третий комментарий</span></label>
+        </div>
+    </section>
+    <section class="page-main__price price">
+      <div class="price__wrapper">
+        <h4 class="visually-hidden">Тарифы и цены</h4>
+        <table class="price__table">
+          <tr class="price__row">
+            <td class="price__title price__name visually-hidden">Тариф
+            <td class="price__title price__name">База
+              <span class="price__cost">1,99 USD</span></td>
+            <td class="price__title price__name price__name--hit">Стандарт
+              <span class="price__cost">3,99 USD</span></td>
+            <td class="price__title price__name">Анлим
+              <span class="price__cost">3,99 USD</span></td>
+          </tr>
+            <td class="price__column price__column--name">
+              Розовый фильтр
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          <tr>
+            <td class="price__column price__column--name">
+              Смайлики
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__column price__column--name">
+              Комментарии
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__column">
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          </tr>
+        </table>
+        <div class="price-slider__wrapper">
+          <button class="price-slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="price-slider__toggle price-slider__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+          <button class="price-slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+        </div>
+        </table>
+      </div>
+    </section>
+    <section class="page-main__contacts contacts">
+      <div class="contacts__wrapper container">
+        <h5 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h5>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h6 class="contacts__title">Звоните:</h6>
+            <a href="tel:+78125556666" class="contacts__info contacts__info--number">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <h6 class="contacts__title">Пишите:</h6>
+            <a class="contacts__info contacts__info--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h6 class="contacts__title">Приезжайте в гости:</h6>
+            <p class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__map map">
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.084044706823!2d30.31965248853345!3d59.93974130023607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541420177181"></iframe>
     </section>
   </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="картинка очков пинк">
+    <ul class="page-footer__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#" aria-label="Твиттер">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <g id="W6EeEF_1_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href='#' aria-label="Фейсбук">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href='#' aria-label="Ютуб">
+          <svg class="social-list__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__developers">
+      <p class="page-footer__name">Разработано</p><span><svg class="page-footer__logo-developers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg></span>
+    </div>
+  </footer>
 </body>
+<script>
+var navMainList = document.querySelector('.main-nav__list');
+var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function() {
+  navToggle.classList.toggle('main-nav__toggle--closed');
+  if (navMainList.classList.contains('main-nav__list--open')) {
+    navMainList.classList.remove('main-nav__list--open');
+  } else {
+    navMainList.classList.add('main-nav__list--open');
+  }
+});
+
+</script>
 
 </html>

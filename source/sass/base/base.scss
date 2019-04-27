@@ -3,11 +3,11 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: $Open-Sans;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  width: 320px;
-  color: #283645;
+  min-width: 320px;
+  color: $dark-blue;
 }
 
 a {
@@ -30,7 +30,31 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  max-width: 1200px;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
 }

@@ -1,0 +1,65 @@
+.analysis {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: $dark-white;
+  }
+}
+
+.analysis__name {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  width: 172px;
+  margin-left: auto;
+  margin-right: 126px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.analysis__description {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  width: 296px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}
+
+.analysis__link {
+  margin: 0;
+  margin-left: auto;
+  text-decoration: underline;
+  color: $light-red;
+  margin-right: 71px;
+}
+
+.analysis__item {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  width: 660px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.analysis__svg {
+  height: 280px;
+}
+
+.analysis__item--wrapper {
+  margin-left: auto;
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,9 +22,9 @@
           </svg>
         </span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list main-nav__list--open">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -37,7 +38,7 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть/открыть меню</button>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Закрыть/открыть меню</button>
         </div>
     </div>
     </nav>
@@ -47,139 +48,202 @@
       <h1 class="page-main__description">Фотографии Пользователей</h1>
     </section>
     <section class="page-main__photo photo">
-      <h2 class="photo__description">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</h2>
-      <ul class="photo-list">
-        <li class="photo-list__item">
-          <img class="photo__picture photo__picture--day" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография красивого вида">
-          <div class="photo__wrapper container">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Аннa</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(5 минут назад)</p>
+      <h2 class="photo__description description">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</h2>
+      <div class="photo__panorama panorama">
+        <img class="panorama__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография красивого вида">
+        <div class="panorama__wrapper">
+          <div class="pamorama__username-wrapper">
+            <p class="panorama__username">Аннa</p>
+            <p class="panorama__activity"><span class="visually-hidden">Последняя активность</span>(5 минут назад)</p>
+          </div>
+          <p class="panorama__comment">Прыгать или нет? Напишите в коментарии свой совет и
+            смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="panorama__but-like">
+            <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <g>
+                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                </g>
+              </svg></button>
+            <p class="photo__like">Нравится: 215</p>
+          </div>
+        </div>
+      </div>
+      <div class="container photo-list">
+        <ul class="photo-list__inner">
+          <li class="photo-list__item">
+            <img class="photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография машины">
+            <div class="photo__wrapper">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Левон</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(5 часов назад)</p>
+              </div>
+              <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg></button>
+                <p class="photo__like">Нравится: 356</p>
+              </div>
             </div>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и
-              смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 215</p>
+          </li>
+          <li class="photo-list__item">
+            <img class="photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография барабанной установки">
+            <div class="photo__wrapper">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Антон</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(12 часов назад)</p>
+              </div>
+              <p class="photo__comment">Соседи будут рады!</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg>
+                </button>
+                <p class="photo__like">Нравится: 666</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <img class="photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография высоких зданий">
+            <div class="photo__wrapper">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Борис</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(20 часов назад)</p>
+              </div>
+              <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg></button>
+                <p class="photo__like">Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <img class="photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография кубанской бахчи">
+            <div class="photo__wrapper">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Сергей</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(25 часов назад)</p>
+              </div>
+              <p class="photo__comment">Самая кубанская в мире!</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg></button>
+                <p class="photo__like">Нравится: 4</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <img class="photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография мужских ног на холме">
+            <div class="photo__wrapper ">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Максим</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(40 часов назад)</p>
+              </div>
+              <p class="photo__comment">Где снег-то?</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg></button>
+                <p class="photo__like">Нравится: 150</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list__item"><img class="photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография самолета">
+            <div class="photo__wrapper">
+              <div class="photo__username-wrapper">
+                <p class="photo__username">Надежда</p>
+                <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(45 часов назад)</p>
+              </div>
+              <p class="photo__comment">Всем GM и взаимные лайки!</p>
+              <div class="photo__but-like">
+                <button class="photo__like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
+                    </g>
+                  </svg></button>
+                <p class="photo__like">Нравится: 2560</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main-editor editor">
+      <h2 class="visually-hidden">Редактирование фото</h2>
+      <div class="container">
+        <p class="editor__description description">Затмите их всех! <br> Выкладывайте всё, что накопилось в телефоне!</p>
+      </div>
+      <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="editor__wrapper-main container">
+          <picture class="editor__photo">
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x">
+            <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото c лесом">
+          </picture>
+          <div class="editor__wrapper">
+            <ul class="editor__list">
+              <li class="editor__item">
+                <button class="editor__button editor__button--setting">
+                  <span class="visually-hidden">Обрезать</span>
+                  <svg class="editor__svg editor__svg--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg> </button>
+                <div class="editor__control">
+                  <div class="editor__scale"></div>
+                  <div class="editor__toggle editor__toggle--crop"></div>
+                </div>
+              </li>
+              <li class="editor__item">
+                <button class="editor__button editor__button--setting editor__button--fill--active " type="button">
+                  <span class="visually-hidden">Залить</span>
+                  <svg class="editor__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
+                </button>
+                <div class="editor__control editor__control--hidden">
+                  <div class="editor__scale"></div>
+                  <div class="editor__toggle editor__toggle--fill"></div>
+                </div>
+              </li>
+              <li class="editor__item">
+                <button class="editor__button editor__button--setting" type="button">
+                  <span class="visually-hidden">Негатив</span>
+                  <svg class="editor__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg> </button>
+                <div class="editor__control editor__control--hidden">
+                  <div class="editor__scale"></div>
+                  <div class="editor__toggle editor__toggle--fill"></div>
+                </div>
+              </li>
+            </ul>
+              <div class="editor__button-wrapper">
+                <button class="button editor__pushbutton editor__pushbutton--send">Запостить</button>
+                <button class="button editor__pushbutton editor__pushbutton--cancel">Отмена</button>
+              </div>
             </div>
           </div>
-        </li>
-        <li class="photo-list__item container">
-          <img class="photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография машины">
-          <div class="photo__wrapper">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Левон</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(5 часов назад)</p>
-            </div>
-            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 356</p>
-            </div>
-          </div>
-        </li>
-        <li class="photo-list__item container">
-          <img class="photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография барабанной установки">
-          <div class="photo__wrapper">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Антон</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(12 часов назад)</p>
-            </div>
-            <p class="photo__comment">Соседи будут рады!</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button" type="button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg>
-              </button>
-              <p class="photo__like">Нравится: 666</p>
-            </div>
-          </div>
-        </li>
-        <li class="photo-list__item container">
-          <img class="photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография высоких зданий">
-          <div class="photo__wrapper">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Борис</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(20 часов назад)</p>
-            </div>
-            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 215</p>
-            </div>
-          </div>
-        </li>
-        <li class="photo-list__item container">
-          <img class="photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография кубанской бахчи">
-          <div class="photo__wrapper">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Сергей</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(25 часов назад)</p>
-            </div>
-            <p class="photo__comment">Самая кубанская в мире!</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 4</p>
-            </div>
-          </div>
-        </li>
-        <li class="photo-list__item container">
-          <img class="photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография мужских ног на холме">
-          <div class="photo__wrapper ">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Максим</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(40 часов назад)</p>
-            </div>
-            <p class="photo__comment">Где снег-то?</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 150</p>
-            </div>
-          </div>
-        </li>
-        <li class="photo-list__item container"><img class="photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография самолета">
-          <div class="photo__wrapper">
-            <div class="photo__username-wrapper">
-              <p class="photo__username">Надежда</p>
-              <p class="photo__activity"><span class="visually-hidden">Последняя активность</span>(45 часов назад)</p>
-            </div>
-            <p class="photo__comment">Всем GM и взаимные лайки!</p>
-            <div class="photo__button-and-like">
-              <button class="button photo_like-button"><span class="visually-hidden">Поставить лайк</span><svg class="photo__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                  </g>
-                </svg></button>
-              <p class="photo__like">Нравится: 2560</p>
-            </div>
-          </div>
-        </li>
-      </ul>
+      </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="картинка очков пинк">
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
@@ -215,5 +279,22 @@
   </footer>
   <div></div>
 </body>
+<script>
+var navMainList = document.querySelector('.main-nav__list');
+var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function() {
+  navToggle.classList.toggle('main-nav__toggle--closed');
+  if (navMainList.classList.contains('main-nav__list--open')) {
+    navMainList.classList.remove('main-nav__list--open');
+  } else {
+    navMainList.classList.add('main-nav__list--open');
+  }
+});
+
+</script>
 
 </html>

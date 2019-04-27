@@ -1,0 +1,67 @@
+.panorama {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panorama__picture {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.panorama__comment {
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+
+  }
+}
+
+.panorama__wrapper {
+  background-color: $dark-white;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media(min-width: $tablet-width) {
+    width: 620px;
+    padding: 10px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.panorama__username {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.pamorama__username-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.panorama__but-like {
+  display: flex;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.panorama__activity {
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 300;
+  font-size: 12px;
+}

@@ -1,0 +1,18 @@
+.contest__fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.contest__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest__label {
+  color: $light-red;
+  font-weight: 300;
+  line-height: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}

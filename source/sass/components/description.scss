@@ -1,0 +1,11 @@
+.description {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  font-weight: normal;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
