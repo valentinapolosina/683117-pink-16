@@ -193,7 +193,7 @@
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x">
             <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото c лесом">
           </picture>
-          <div class="editor__wrapper container">
+          <div class="editor__wrapper">
             <ul class="editor__list">
               <li class="editor__item">
                 <button class="editor__button editor__button--setting">
@@ -202,6 +202,10 @@
                     <path fill="none" d="M0,0h48v48H0V0z" />
                     <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
                   </svg> </button>
+<div class="editor__control">
+                <div class="editor__scale"></div>
+                <div class="editor__toggle editor__toggle--crop"></div>
+              </div>
               </li>
               <li class="editor__item">
                 <button class="editor__button editor__button--setting editor__button--fill--active " type="button">
@@ -212,6 +216,10 @@
                     <rect y="40" width="48" height="3" />
                   </svg>
                 </button>
+                <div class="editor__control editor__control--hidden">
+                <div class="editor__scale"></div>
+                <div class="editor__toggle editor__toggle--fill"></div>
+              </div>
               </li>
               <li class="editor__item">
                 <button class="editor__button editor__button--setting" type="button">
@@ -220,21 +228,15 @@
                     <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
                     <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
                   </svg> </button>
+
+                                  <div class="editor__scale"></div>
+                <div class="editor__toggle editor__toggle--contrast"></div>
               </li>
             </ul>
             <div class="editor__wrapper-scale-and-button">
             <div class="editor__scale-items">
-              <div class="editor__control">
-                <div class="editor__scale"></div>
-                <div class="editor__toggle editor__toggle--crop"></div>
-              </div>
-              <div class="editor__control editor__control--hidden">
-                <div class="editor__scale"></div>
-                <div class="editor__toggle editor__toggle--fill"></div>
-              </div>
-              <div class="editor__control editor__control--hidden">
-                <div class="editor__scale"></div>
-                <div class="editor__toggle editor__toggle--contrast"></div>
+
+
               </div>
             </div>
           <div class="editor__button-wrapper">
