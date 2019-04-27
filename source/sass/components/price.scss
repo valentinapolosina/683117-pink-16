@@ -1,0 +1,31 @@
+.price-slider__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  @media (min-width:  $tablet-width) {
+    display: none;
+  }
+}
+
+.price-slider__toggle {
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #bec2c7;
+  padding: 0;
+}
+
+.price-slider__toggle--active {
+  box-shadow: 0 0 0 3px $dark-blue;
+    background-color: transparent;
+}

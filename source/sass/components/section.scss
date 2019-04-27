@@ -40,7 +40,15 @@
 
 }
 
-
 .page-main__analysis {
   padding: 4% 8% 4%;
+  box-sizing: border-box;
+}
+
+.page-main__contacts {
+  background-color: $white;
+}
+
+.page-main__price {
+  background-color: $dark-white;
 }

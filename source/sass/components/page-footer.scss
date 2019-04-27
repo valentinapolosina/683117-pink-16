@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 
 
   @media (min-width: $tablet-width) {
@@ -13,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    min-width: 940px;
   }
 }
 

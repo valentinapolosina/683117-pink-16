@@ -94,4 +94,12 @@
 
 .page-intro__picture-hand {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }

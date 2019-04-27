@@ -28,6 +28,7 @@
 .editor__wrapper {
   display: flex;
   flex-direction: column;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

@@ -30,7 +30,12 @@
   flex-wrap: wrap;
 
   @media(min-width: $tablet-width) {
-    width: 78%;
+    width: 620px;
+    padding: 10px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
@@ -45,7 +50,7 @@
   display: flex;
 }
 
-.panorama__button-and-like {
+.panorama__but-like {
   display: flex;
   align-items: flex-end;
 
