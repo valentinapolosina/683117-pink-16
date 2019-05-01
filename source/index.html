@@ -6,6 +6,7 @@
   <title>Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 </head>
 
 <body>
@@ -162,52 +163,65 @@
       <div class="price__wrapper">
         <h4 class="visually-hidden">Тарифы и цены</h4>
         <table class="price__table">
-          <tr class="price__row">
-            <td class="price__title price__name visually-hidden">Тариф
-            <td class="price__title price__name">База
-              <span class="price__cost">1,99 USD</span></td>
-            <td class="price__title price__name price__name--hit">Стандарт
-              <span class="price__cost">3,99 USD</span></td>
-            <td class="price__title price__name">Анлим
-              <span class="price__cost">3,99 USD</span></td>
-          </tr>
-            <td class="price__column price__column--name">
+          <thead>
+            <tr class="price__row">
+              <td class="price__title price__name visually-hidden">Тариф
+              <td class="price__title price__name">База
+                <span class="price__cost">1,99 USD</span></td>
+              <td class="price__title price__name price__name--hit">Стандарт
+                <span class="price__cost">3,99 USD</span></td>
+              <td class="price__title price__name">Анлим
+                <span class="price__cost">3,99 USD</span></td>
+            </tr>
+          </thead>
+          <tr>
+            <td class="price__row--name">
               Розовый фильтр
             </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
-            </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
-            </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
-            </td>
-          <tr>
-            <td class="price__column price__column--name">
-              Смайлики
-            </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
-            </td>
-            <td class="price__column">
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
               <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
             </td>
-            <td class="price__column">
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
               <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
             </td>
           </tr>
           <tr>
-            <td class="price__column price__column--name">
+            <td class="price__row--name">
+              Смайлики
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__row--name">
               Комментарии
             </td>
-            <td class="price__column">
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
               <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
             </td>
-            <td class="price__column">
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
               <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
             </td>
-            <td class="price__column">
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
               <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
             </td>
           </tr>

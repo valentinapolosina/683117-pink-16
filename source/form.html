@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 </head>
 
 <body>
@@ -53,104 +54,75 @@
         <p class="contest__filled-form"> Пожалуйста, заполните форму ниже:</p>
       </div>
       <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="contest__fieldset">
+        <fieldset class="contest__fieldset container ">
           <div class="contest__list">
-            <div class="contest__item"><label class="contest__label" for="name">Имя:</label>
-              <input class="contest__input" type="text" name="name" id="name" placeholder="Введите ваше имя"></div>
-            <div class="contest__item"><label class="contest__label" for="surname">Фамилия:</label>
-              <input class="contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию"></div>
-            <div class="contest__item"><label class="contest__label" for="middle-name">Отчество:</label>
-              <input class="contest__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже"></div>
+            <div class="contest__item"><label class="contest__label-item" for="surname">Фамилия:</label>
+              <input class="contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*"></div>
+            <div class="contest__item"><label class="contest__label-item" for="name">Имя:</label>
+              <input class="contest__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"></div>
+            <div class="contest__item"><label class="contest__label-item" for="middle-name">Отчество:</label>
+              <input class="contest__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже*"></div>
           </div>
         </fieldset>
-        <fieldset class="contest__fieldset contest__fieldset--information">
-          <legend class="contest__legend contest__accent contest__legend--contacts">Контактная информация</legend>
-          <div class="contest__flexwrapper contest__flexwrapper--contacts">
-            <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
-              <label class="contest__label contest__accent" for="phone">Номер телефона</label>
-              <input class="contest__input contest__input--text" id="phone" type="text" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
-              <label class="contest__label contest__accent" for="email">Адрес почты</label>
-              <input class="contest__input contest__input--text" id="email" type="text" placeholder="Введите почту *">
-            </div>
+        <div class="contest__fieldset-wrapper">
+          <fieldset class="contest__fieldset contest__fieldset--journey container">
+            <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest__list">
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="selfi" id="selfi" checked="">
+                <label class="contest__label" for="selfi">Сделал селфи с акулой</label></li>
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="beach" id="beach" checked="">
+                <label class="contest__label" for="beach">Обгорел на пляже</label></li>
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="chack" id="chack">
+                <label class="contest__label" for="chack">Видел Чака Норриса</label></li>
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="buy" id="buy">
+                <label class="contest__label" for="buy">Накупил сувениров</label></li>
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="turret" id="turret" checked="">
+                <label class="contest__label" for="turret">Удержал башню</label></li>
+              <li class="contest__list-item">
+                <input class="contest__checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="contest__label" for="hotel">Разгромил отель</label></li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="contest__fieldset container">
+          <legend class="contest__legend contest__legend--information">Контактная информация</legend>
+          <div class="contest__item">
+            <label class="contest__label-item" for="phone">Номер телефона</label>
+            <input class="contest__input" id="phone" type="text" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="contest__item">
+            <label class="contest__label-item" for="email">Адрес почты</label>
+            <input class="contest__input" id="email" type="text" placeholder="Введите почту *">
           </div>
         </fieldset>
-        <fieldset class="contest__fieldset">
-          <legend class="contest__legend">С каким приложением путешествовали?</legend>
-          <ul class="contest__list">
-            <li class="contest__item">
-              <input class="contest__radio" type="radio" name="journey" id="ios" value="ios" checked="">
-              <label class="contest__label" for="ios">Pink для iOS</label></li>
-            <li class="contest__item">
-              <input class="contest__radio" type="radio" name="journey" id="android" value="android">
-              <label class="contest__label" for="android">Pink на Android</label></li>
-            <li class="contest__item">
-              <input class="contest__radio contest__radio--active" type="radio" name="journey" id="windows" value="windows">
-              <label class="contest__label contest__label--active" for="windows">Windows Phone</label></li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest__fieldset">
-          <legend class="contest__legend ">Контактная информация</legend>
-          <div class="contest__wrapper">
-            <div class="contest__wrapper--information">
-              <label class="contest__label" for="phone">Номер телефона</label>
-              <input class="contest__input" id="phone" type="text" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="contest__wrapper--information">
-              <label class="contest__label" for="email">Адрес почты</label>
-              <input class="contest__input" id="email" type="text" placeholder="Введите почту *">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="contest__fieldset">
-          <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="contest__list">
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="selfi" id="selfi" checked="">
-              <label class="contest__label" for="selfi"><svg class="contest__svg contest__svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Сделал селфи с акулой</label></li>
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="beach" id="beach" checked="">
-              <label class="contest__label" for="beach"><svg class="contest__svg contest__svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Обгорел на пляже</label></li>
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="chack" id="chack">
-              <label class="contest__label" for="chack"><svg class="contest__svg contest__svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Видел Чака Норриса</label></li>
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="buy" id="buy">
-              <label class="contest__label" for="buy"><svg class="contest__svg contest__svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Накупил сувениров</label></li>
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="turret" id="turret" checked="">
-              <label class="contest__label" for="turret"><svg class="contest__svg contest__svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Удержал башню</label></li>
-            <li class="contest__list-item">
-              <input class="contest__checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="contest__label" for="hotel"><svg class="contest__svg contest__svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-                </svg>
-                </svg>Разгромил отель</label></li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest__fieldset">
-          <legend class="contest__title">Опишите свои эмоции</legend>
+        <div class="contest__fieldset-wrapper">
+          <fieldset class="contest__fieldset container">
+            <legend class="contest__legend">С каким приложением путешествовали?</legend>
+            <ul class="contest__list">
+              <li class="contest__item contest__item--radio">
+                <input class="contest__radio" type="radio" name="journey" id="ios" value="ios" checked="">
+                <label class="contest__label contest__label--radio" for="ios">Pink для iOS</label></li>
+              <li class="contest__item contest__item--radio">
+                <input class="contest__radio" type="radio" name="journey" id="android" value="android">
+                <label class="contest__label contest__label--radio" for="android">Pink на Android</label></li>
+              <li class="contest__item contest__item--radio">
+                <input class="contest__radio " type="radio" name="journey" id="windows" value="windows">
+                <label class="contest__label contest__label--radio" for="windows">Windows Phone</label></li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="contest__fieldset container">
+          <legend class="contest__legend">Опишите свои эмоции</legend>
           <textarea class="contest__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="contest__submit">
-          <button class="contest__button" type="submit">Отправить форму</button>
-          <p class="contest__explain"><span class="contest__explain--star">*</span> — обязательные поля</p>
+          <button class="contest__button button-form" type="submit">Отправить форму</button>
+          <p class="contest__explain"><sup class="contest__explain--star">*</sup> — обязательные поля</p>
         </div>
       </form>
     </section>
@@ -190,35 +162,40 @@
     </div>
   </footer>
 </body>
-<section class="submit-sucsess">
-  <p class="submit-sucsess__title">Ваша заявка отправлена</p>
-  <p class="submit-sucsess__discription">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-  <p class="submit-sucsess__button-wrapper">
-    <button class="submit-sucsess__close-button" type="button">Закрыть окно</button>
+<section class="submit-poppup submit-poppup--sucsess">
+  <div class="submit-poppup__wrapper">
+    <p class="submit-poppup__title">Ваша заявка отправлена</p>
+    <p class="submit-poppup__discription">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+  </div>
+  <p class="submit-poppup__button-wrapper">
+    <button class="submit-poppup__close-button button-form" type="button">Закрыть окно</button>
   </p>
 </section>
-<section class="submit-unsucsess">
-  <p class="submit-unsucsess__title">Что-то пошло не так!</p>
-  <p class="submit-unsucsess__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <p class="submit-unsucsess__button-wrapper">
-    <button class="submit-unsucsess__close-button" type="button">Ок</button>
+<section class="submit-poppup submit-poppup--unsucsess">
+  <div class="submit-poppup__wrapper">
+    <p class="submit-poppup__title">Что-то пошло не так!</p>
+    <p class="submit-poppup__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  </div>
+  <p class="submit-poppup__button-wrapper">
+    <button class="submit-poppup__close-button button-form" type="button">Ок</button>
   </p>
 </section>
-
 <script>
-  var navMainList = document.querySelector('.main-nav__list');
-  var navToggle = document.querySelector('.main-nav__toggle');
-  var navMain = document.querySelector('.main-nav');
+var navMainList = document.querySelector('.main-nav__list');
+var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
 
-  navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    navToggle.classList.toggle('main-nav__toggle--closed');
-    if (navMainList.classList.contains('main-nav__list--open')) {
-      navMainList.classList.remove('main-nav__list--open');
-    } else {
-      navMainList.classList.add('main-nav__list--open');
-    }
-  });
+navToggle.addEventListener('click', function() {
+  navToggle.classList.toggle('main-nav__toggle--closed');
+  if (navMainList.classList.contains('main-nav__list--open')) {
+    navMainList.classList.remove('main-nav__list--open');
+  } else {
+    navMainList.classList.add('main-nav__list--open');
+  }
+});
+
 </script>
+
 </html>
