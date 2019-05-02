@@ -41,6 +41,11 @@
     line-height: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 760px;
+    margin: 44px auto 60px;
+  }
+
 }
 
 .page-main__analysis {

@@ -11,6 +11,10 @@
     margin-bottom: 36px;
     padding: 45px 30px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 15px 0;
+  }
 }
 
 .contest__form {
@@ -20,6 +24,12 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contest__list {
@@ -28,6 +38,12 @@
   margin-left: 20px;
   margin-right: 30px;
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contest__label {
@@ -37,19 +53,6 @@
   cursor: pointer;
 }
 
-
-.contest__item--number::before {
-  content: "";
-  position: absolute;
-  right: 60px;
-  top: 1px;
-  width: 60px;
-  height: 60px;
-  background-image: url(../img/phone.svg);
-  background-repeat: no-repeat;
-  background-color: #e5e5e5;
-  background-position: 50% 50%;
-}
 
 .contest__label-item {
   line-height: 30px;
@@ -76,6 +79,10 @@
     flex-direction: row;
     align-items: baseline;
     width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
   }
 }
 
@@ -107,7 +114,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 90%;
     margin-bottom: 8px;
   }
 }
@@ -121,7 +128,7 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   margin-top: 20px;
   margin-left: auto;
@@ -133,6 +140,10 @@
     font-size: 18px;
     width: 500px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 
@@ -142,10 +153,14 @@
   @media (min-width: $tablet-width) {
     display: block;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
@@ -278,10 +293,24 @@
   margin-right: 20px;
   margin-right: auto;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+  }
 }
 
 .contest__textarea::placeholder {
   color: #283645;
+}
+
+.contest__submit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .contest__explain--star {
@@ -310,12 +339,20 @@
   @media (min-width: $tablet-width) {
     order: -5;
     border: none;
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 50%;
+    }
   }
 }
 
 .contest__fieldset-wrapper--application {
   @media (min-width: $tablet-width) {
     order: -4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
   }
 }
 
@@ -326,7 +363,50 @@
 }
 
 .contest__fieldset--emotion {
+  @media (min-width: $tablet-width) {}
+}
+
+.contest__svg {
+  fill: $light-red;
+}
+
+.contest__svg-wrapper {
+  display: none;
+
   @media (min-width: $tablet-width) {
-    border: none;
+    display: block;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
+    top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 62px;
+    position: absolute;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 47px;
+  }
+}
+
+.contest__item-wrapper {
+  display: flex;
+}
+
+.contest__list-item--shark {
+  order: 0;
+}
+
+.contest__list-item--beach {
+  order: 2;
+}
+
+.contest__list-item--shack {
+  order: 0;
+}
+
+.contest__list-item--souvenir {
+  order: 3;
 }
