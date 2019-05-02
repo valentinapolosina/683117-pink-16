@@ -54,7 +54,7 @@
         <p class="contest__filled-form"> Пожалуйста, заполните форму ниже:</p>
       </div>
       <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="contest__fieldset container ">
+        <fieldset class="contest__fieldset contest__fieldset--name container ">
           <div class="contest__list">
             <div class="contest__item"><label class="contest__label-item" for="surname">Фамилия:</label>
               <input class="contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*"></div>
@@ -64,7 +64,7 @@
               <input class="contest__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже*"></div>
           </div>
         </fieldset>
-        <div class="contest__fieldset-wrapper">
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--journey">
           <fieldset class="contest__fieldset contest__fieldset--journey container">
             <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="contest__list">
@@ -89,18 +89,18 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="contest__fieldset container">
+        <fieldset class="contest__fieldset contest__fieldset--information container">
           <legend class="contest__legend contest__legend--information">Контактная информация</legend>
           <div class="contest__item contest__item--number">
             <label class="contest__label-item" for="phone">Номер телефона</label>
             <input class="contest__input" id="phone" type="text" placeholder="Номер, пожалуйста">
           </div>
-          <div class="contest__item">
+          <div class="contest__item contest__item--number">
             <label class="contest__label-item" for="email">Адрес почты</label>
             <input class="contest__input" id="email" type="text" placeholder="Введите почту *">
           </div>
         </fieldset>
-        <div class="contest__fieldset-wrapper">
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--application">
           <fieldset class="contest__fieldset container">
             <legend class="contest__legend">С каким приложением путешествовали?</legend>
             <ul class="contest__list">
@@ -116,7 +116,7 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="contest__fieldset container">
+        <fieldset class="contest__fieldset contest__fieldset--emotion container">
           <legend class="contest__legend">Опишите свои эмоции</legend>
           <textarea class="contest__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
