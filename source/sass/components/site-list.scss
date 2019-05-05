@@ -11,6 +11,7 @@
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -23,13 +24,18 @@
     display: block;
   padding: 12px 21px;
   padding-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    border:none;
+    background-color: transparent;
+  }
 }
 
 .site-list__item {
 @media (min-width: $desktop-width) {
   padding-left: 50px;
     font-size: 18px;
-    padding-right: 40px;
+    padding-right: 5px;
     line-height: 18px;
     font-weight: 300;
 }

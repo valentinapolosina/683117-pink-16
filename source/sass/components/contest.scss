@@ -3,6 +3,7 @@
   border: none;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -14,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 15px 0;
+    min-width: 400px;
   }
 }
 
@@ -82,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -143,6 +145,7 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    margin-bottom: 30px;
   }
 }
 
@@ -166,7 +169,7 @@
 
 .contest__legend {
   padding: 36px 35px 0;
-  margin: 0 0 45px;
+  margin: 0 auto;
   line-height: 18px;
   color: $light-red;
   text-align: center;
@@ -186,8 +189,9 @@
 
 .contest__list-item {
   padding-left: 86px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
+  margin-top: 20px;
 }
 
 .contest__checkbox {
@@ -289,8 +293,6 @@
   min-height: 200px;
   resize: none;
   margin: 0 auto;
-  margin-left: 41px;
-  margin-right: 20px;
   margin-right: auto;
   margin-bottom: 40px;
 
@@ -299,7 +301,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 900px;
+    width: 768px;
   }
 }
 
@@ -309,8 +311,23 @@
 
 .contest__submit {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.contest__button {
+  margin: 0;
 }
 
 .contest__explain--star {
@@ -392,7 +409,16 @@
 }
 
 .contest__item-wrapper {
-  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+
 }
 
 .contest__list-item--shark {

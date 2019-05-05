@@ -11,6 +11,11 @@
   }
 }
 
+.price__wrapper {
+  overflow: hidden;
+  width: 620px;
+}
+
 .price-slider__toggle {
   background: 0 0;
   border: 0;
@@ -33,7 +38,14 @@
 .price__table {
   width: 100%;
   margin: 0 auto;
-  border-collapse: collapse
+  border-collapse: collapse;
+  transform: translateX(-220px);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .price__title {
@@ -48,6 +60,19 @@
   text-transform: uppercase;
   background: #283645;
   border: 2px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px;
+    min-width: 0;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    height: 100px;
+
+  }
 }
 
 .price__cost {
@@ -72,6 +97,11 @@
   font-weight: 700;
   line-height: 30px;
   color: rgb(255, 255, 255);
+
+  @media (min-width: $tablet-width) {
+    top: 1px;
+    left: 5px;
+  }
 }
 
 .price__name--hit::after {
@@ -86,6 +116,12 @@
   border-style: solid;
   border-width: 27px;
   border-color: transparent transparent $light-red;
+
+  @media (min-width: $tablet-width) {
+    top: -45px;
+    left: -41px;
+    width: 23px;
+  }
 }
 
 .price__row--name {
@@ -95,6 +131,21 @@
   line-height: 0;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+    background-color: $white;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    width: 140px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 
@@ -103,7 +154,9 @@
   font-weight: 400;
   line-height: 30px;
   border: 2px solid #e5e5e5;
-  background: $white;
+  width: 145px;
+
+
 }
 
 .price__row--settings {
@@ -114,4 +167,53 @@
   text-transform: uppercase;
   background: #fff;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 55px;
+  }
+}
+
+.price__settings {
+  position: relative;
+}
+
+.price__svg--on {
+  fill: #3dc644;
+}
+
+.price__svg--off {
+  fill: #f25b26;
+}
+
+.price__svg {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  top: 13px;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    right: 98px;
+  }
+}
+
+.price__settings-name {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__row--test {
+  border: none;
 }
