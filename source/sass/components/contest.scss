@@ -10,12 +10,12 @@
     flex-direction: column;
     border: 2px solid #e5e5e5;
     margin-bottom: 36px;
-    padding: 45px 30px 0;
+    width: 600px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 15px 0;
-    min-width: 400px;
+    width: 100%;
   }
 }
 
@@ -23,12 +23,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -72,15 +71,17 @@
 .contest__item {
   display: block;
   width: 280px;
-  margin: 0 auto 20px;
   text-align: left;
   position: relative;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    width: 600px;
+    width: 550px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,14 +90,14 @@
 }
 
 .contest__item--number {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
-    margin-top: 3px;
-    margin-bottom: 29px;
+    padding-top: 3px;
+    padding-bottom: 29px;
   }
 
 }
@@ -244,6 +245,12 @@
   }
 }
 
+.contest__fieldset-wrapper-nogrey {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .contest__fieldset--journey {
   margin-bottom: 20px;
 }
@@ -280,7 +287,7 @@
 }
 
 .contest__item--radio {
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .contest__textarea {
@@ -319,10 +326,10 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
+    width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
+  @media (min-width: $desktop-width) {;
   }
 }
 
@@ -345,7 +352,7 @@
   margin-top: 20px;
 }
 
-.contest__fieldset--information {
+.contest__fieldset-wrapper--information {
 
   @media (min-width: $tablet-width) {
     order: -3;
@@ -356,11 +363,29 @@
   @media (min-width: $tablet-width) {
     order: -5;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.contest__fieldset--application {
+    @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.contest__fieldset-wrapper--name {
+  @media (min-width: $tablet-width) {
+    order: -5;
+
 
     @media (min-width: $desktop-width) {
-      flex-basis: 50%;
+      width: 50%
     }
   }
+
 }
 
 .contest__fieldset-wrapper--application {
@@ -395,16 +420,16 @@
     width: 59px;
     height: 59px;
     background-color: #e5e5e5;
-    top: 2px;
+    top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 62px;
+    right: 54px;
     position: absolute;
   }
 
   @media (min-width: $desktop-width) {
-    right: 47px;
+    right: 41px;
   }
 }
 
@@ -413,6 +438,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -436,3 +462,4 @@
 .contest__list-item--souvenir {
   order: 3;
 }
+

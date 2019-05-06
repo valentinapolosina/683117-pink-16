@@ -3,17 +3,33 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50px);
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+
 .price__wrapper {
   overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 40px;
+
+
+@media (min-width: $tablet-width) {
   width: 620px;
+}
+
+@media (min-width: $desktop-width) {
+  display: block;
+  width: 100%;
+}
 }
 
 .price-slider__toggle {
@@ -36,10 +52,9 @@
 }
 
 .price__table {
-  width: 100%;
+      width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
-  transform: translateX(-220px);
 
   @media (min-width: $tablet-width) {
     transform: none;

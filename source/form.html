@@ -53,6 +53,7 @@
         <h6 class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__filled-form"> Пожалуйста, заполните форму ниже:</span></h6>
       </div>
       <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contest__fieldset-wrapper-nogrey contest__fieldset-wrapper--name">
         <fieldset class="contest__fieldset contest__fieldset--name">
           <div class="contest__list">
             <div class="contest__item"><label class="contest__label-item" for="surname">Фамилия:</label>
@@ -63,6 +64,7 @@
               <input class="contest__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже*"></div>
           </div>
         </fieldset>
+      </div>
         <div class="contest__fieldset-wrapper contest__fieldset-wrapper--journey">
           <fieldset class="contest__fieldset contest__fieldset--journey container">
             <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -88,6 +90,7 @@
             </ul>
           </fieldset>
         </div>
+        <div class="contest__fieldset-wrapper-nogrey contest__fieldset-wrapper--information">
         <fieldset class="contest__fieldset contest__fieldset--information container">
           <legend class="contest__legend contest__legend--information">Контактная информация</legend>
           <div class="contest__item-wrapper">
@@ -118,8 +121,9 @@
             </div>
           </div>
         </fieldset>
+      </div>
         <div class="contest__fieldset-wrapper contest__fieldset-wrapper--application">
-          <fieldset class="contest__fieldset">
+          <fieldset class="contest__fieldset contest__fieldset--application">
             <legend class="contest__legend">С каким приложением путешествовали?</legend>
             <ul class="contest__list">
               <li class="contest__item contest__item--radio">
@@ -134,10 +138,12 @@
             </ul>
           </fieldset>
         </div>
+        <div class="contest__fieldset-wrapper-nogrey contest__fieldset-wrapper--emotion">
         <fieldset class="contest__fieldset contest__fieldset--emotion container">
           <legend class="contest__legend">Опишите свои эмоции</legend>
           <textarea class="contest__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
+      </div>
         <div class="contest__submit">
           <button class="contest__button button-form" type="submit">Отправить форму</button>
           <p class="contest__explain"><sup class="contest__explain--star">*</sup> — обязательные поля</p>
@@ -145,7 +151,7 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="картинка очков пинк">
     <ul class="page-footer__list social-list">
       <li class="social-list__item">

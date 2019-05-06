@@ -60,3 +60,15 @@
 .page-main__price {
   background-color: $dark-white;
 }
+
+.page-main__contest {
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+  max-width: 960px;
+}
+}
