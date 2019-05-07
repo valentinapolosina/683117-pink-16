@@ -2,6 +2,15 @@
   padding: 40px 20px 0;
   text-align: center;
   width: 280px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .contacts__header {
@@ -13,14 +22,14 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 96px;
+    padding-right: 56px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-
+    width: 50%;
   }
 }
 
@@ -59,14 +68,18 @@
 
 .contacts__item {
   margin-bottom: 25px;
+  box-sizing: border-box;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 47%;
+    width: 46%;
   }
 }
 
 .contacts__item--email {
+
   @media (min-width: $desktop-width) {
     order: 1;
   }
- }
+
+}

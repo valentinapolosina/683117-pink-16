@@ -6,11 +6,12 @@
   <title>Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 </head>
 
 <body>
   <header class="page-header page-header--index">
-    <div class="page-header__сontainer container">
+    <div class="page-header__сontainer">
       <a class="page-header__logo">
         <span class="page-header__image page-header__image--mobile"><svg class="page-header__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
@@ -46,13 +47,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - сайт мобильного приложения</h1>
     <section class="page-main__intro page-intro">
-      <div class="page-intro__wrapper-picture-and-button container">
+      <div class="page-intro__wrapper-picture-and-button">
         <picture class="page-intro__picture">
           <source media="(min-width: 960px)" srcset="../img/iphone-hand-desktop@1x.png">
           <source media="(min-width: 660px)" srcset="../img/iphone-hand-tablet@1x.png">
           <img class="page-intro__picture-hand" src="../img/iphone-hand-mobile@1x.png" alt="Фотография руки с телефоном">
         </picture>
-        <div class="page-intro__wrapper">
+        <div class="page-intro__wrapper container">
           <h2 class="page-intro__header page-intro__header--index">Взгляните на жизнь иначе!</h2>
           <a class="button page-intro__button" href="#">Скачать приложение</a>
           <ul class="page-intro__list available-list">
@@ -159,56 +160,89 @@
         </div>
     </section>
     <section class="page-main__price price">
-      <div class="price__wrapper">
+      <div class="price__wrapper container">
         <h4 class="visually-hidden">Тарифы и цены</h4>
         <table class="price__table">
+          <thead>
+            <tr class="price__row price__row--test">
+              <td class="price__title price__name price__name--hidden visually-hidden">Тариф</td>
+              <td class="price__title price__name">База
+                <span class="price__cost">1,99 USD</span></td>
+              <td class="price__title price__name price__name--hit">Стандарт
+                <span class="price__cost">3,99 USD</span></td>
+              <td class="price__title price__name">Анлим
+                <span class="price__cost">3,99 USD</span></td>
+            </tr>
+          </thead>
           <tr class="price__row">
-            <td class="price__title price__name visually-hidden">Тариф
-            <td class="price__title price__name">База
-              <span class="price__cost">1,99 USD</span></td>
-            <td class="price__title price__name price__name--hit">Стандарт
-              <span class="price__cost">3,99 USD</span></td>
-            <td class="price__title price__name">Анлим
-              <span class="price__cost">3,99 USD</span></td>
-          </tr>
-            <td class="price__column price__column--name">
+            <td class="price__row--name">
               Розовый фильтр
             </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg><span class="visually-hidden">Да</span>
             </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg>
+              <span class="visually-hidden">Да</span>
             </td>
-            <td class="price__column">
-              <span class="tarif__settings tarif__settings--on"><span class="visually-hidden">Да</span></span>
-            </td>
-          <tr>
-            <td class="price__column price__column--name">
-              Смайлики
-            </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
-            </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
-            </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Розовый Фильтр</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg><span class="visually-hidden">Да</span>
             </td>
           </tr>
           <tr>
-            <td class="price__column price__column--name">
+            <td class="price__row--name">
+              Смайлики
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <svg class="price__svg price__svg--off" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+              </svg><span class="visually-hidden">Нет</span>
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg><span class="visually-hidden">Да</span>
+            </td>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Смайлики</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg><span class="visually-hidden">Да</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__row--name">
               Комментарии
             </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
+              <svg class="price__svg price__svg--off" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+              </svg><span class="visually-hidden">Нет</span>
             </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--off"><span class="visually-hidden">Нет</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
+              <svg class="price__svg price__svg--off" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+              </svg>
+              <span class="visually-hidden">Нет</span>
             </td>
-            <td class="price__column">
-              <span class="price__settings price__settings--on"><span class="visually-hidden">Да</span></span>
+            <td class="price__row price__row--settings">
+              <span class="price__settings-name">Комментарии</span>
+              <svg class="price__svg price__svg--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+              </svg><span class="visually-hidden">Да</span>
             </td>
           </tr>
         </table>
@@ -243,7 +277,7 @@
       <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.084044706823!2d30.31965248853345!3d59.93974130023607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541420177181"></iframe>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="картинка очков пинк">
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
