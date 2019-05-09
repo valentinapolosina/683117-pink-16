@@ -6,7 +6,9 @@
   text-align: center;
   display: block;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .editor__list {
@@ -31,9 +33,7 @@
   width: 280px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-
-  }
+  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
@@ -229,5 +229,5 @@
 
 .editor__item {
   display: flex;
-      align-items: center;
+  align-items: center;
 }

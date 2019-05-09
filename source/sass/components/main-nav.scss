@@ -2,13 +2,13 @@
   font-size: 18px;
   line-height: 32px;
   background-color: $dark-blue;
-    min-height: 51px;
+  min-height: 51px;
 
-    &--nojs {
-      .main-nav__list {
-        position: static;
-      }
+  &--nojs {
+    .main-nav__list {
+      position: static;
     }
+  }
 
 
   @media (min-width: $desktop-width) {
@@ -16,24 +16,69 @@
   }
 }
 
-.main-nav__toggle {
-position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    height: 66px;
-    background-color: red;
-    border: none;
-    background-color: black;
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+}
 
-    &--closed {
-      background-color: blue;
-    }
+
+.main-nav__toggle {
+  /*
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 66px;
+  background-color: red;
+  border: none;
+  background-color: black;  */
+
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
+.main-nav__toggle--closed::before {
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle--closed::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav__toggle--closed::after,
+.main-nav__toggle--closed::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 19px;
+  width: 30px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: $white;
+  box-shadow: none;
+}
+
 
 .main-nav__list {
   display: none;
@@ -43,19 +88,18 @@ position: absolute;
   right: 0;
 
 
-@media (min-width: $desktop-width) {
-  display: flex;
-  position: static;
-}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: static;
+  }
+
   &--open {
     display: block;
-     z-index: 2;
+    z-index: 2;
 
     @media (min-width: $desktop-width) {
-  display: flex;
-  position: static;
-}
+      display: flex;
+      position: static;
+    }
   }
 }
-
-

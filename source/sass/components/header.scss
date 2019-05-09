@@ -1,18 +1,23 @@
 .page-header {
   position: relative;
+  background-color: #283645;
 
-    @media (min-width: $desktop-width) {
-      position: absolute;
+  @media (min-width: $desktop-width) {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.4);
-}
+  }
 }
 
 .page-header__logo-svg {
   box-sizing: border-box;
+}
+
+.page-header__image {
+  fill: white;
 }
 
 .page-header__logo {
@@ -22,9 +27,9 @@
 .page-header__сontainer {
 
   @media (min-width: $desktop-width) {
-  display: flex;
-  align-items: center;
-  padding: 48px 20px;
-  box-sizing: border-box;
-}
+    display: flex;
+    align-items: center;
+    padding: 48px 20px;
+    box-sizing: border-box;
   }
+}
