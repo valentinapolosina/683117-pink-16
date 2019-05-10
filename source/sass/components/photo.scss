@@ -80,6 +80,11 @@
   }
 }
 
+.photo__picture-wrapper {
+  width: 100%;
+  line-height: 0;
+}
+
 .photo__but-like {
   display: flex;
   flex-direction: row;
