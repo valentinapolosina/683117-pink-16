@@ -6,18 +6,25 @@
   justify-content: center;
   list-style: none;
   align-items: center;
+  margin-top: 11px;
+  box-sizing: border-box;
 }
 
 .available-list__item {
   padding: 10px;
+  margin-right: 10px;
 }
 
 .available-list__link--windows {
   display: inline-block;
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
 .available-list__link--android {
   display: inline-block;
   margin-top: 11px;
+}
+
+.available-list__link--iphone {
+  margin-top: 5px;
 }

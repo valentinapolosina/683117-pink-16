@@ -7,6 +7,27 @@
   align-items: center;
 }
 
+.panorama__picture-wrapper::before {
+  position: absolute;
+  top: 0px;
+  right: 4%;
+  content: "панорама дня";
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(210, 40, 86);
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+     top: 57px;
+    right: 20px;
+  }
+}
+
 .panorama__picture {
   position: relative;
   width: 100%;
@@ -44,6 +65,7 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+  position: relative;
 }
 
 .panorama__username {

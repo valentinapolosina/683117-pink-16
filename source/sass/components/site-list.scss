@@ -18,25 +18,32 @@
 .site-list__link {
   color: $white;
   text-transform: uppercase;
-    background-color: $dark-blue;
+  background-color: $dark-blue;
   border-top: 1px solid $black;
   border-bottom: 1px solid $light-blue;
-    display: block;
+  display: block;
   padding: 12px 21px;
   padding-bottom: 13px;
 
   @media (min-width: $desktop-width) {
-    border:none;
+    border: none;
     background-color: transparent;
   }
 }
 
 .site-list__item {
-@media (min-width: $desktop-width) {
-  padding-left: 50px;
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     padding-right: 5px;
     line-height: 18px;
     font-weight: 300;
+  }
 }
+
+.site-list__item--border {
+  border-top: 1px solid #485461;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
