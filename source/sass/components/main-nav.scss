@@ -4,16 +4,57 @@
   background-color: $dark-blue;
 
   &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+
     .main-nav__list {
       position: static;
+      display: block;
+    }
+  }
+
+  &--open {
+    display: block;
+
+    .main-nav__list {
+      display: block;
     }
   }
 
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    display: flex;
+    position: static;
   }
 }
+
+.main-nav__list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: static;
+  }
+
+  &--open {
+    display: block;
+    z-index: 2;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      position: static;
+    }
+  }
+}
+
 
 .main-nav__toggle::before {
   content: "";
@@ -57,7 +98,7 @@
 
 .main-nav__toggle--closed::after,
 .main-nav__toggle--closed::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 8px;
   right: 19px;
