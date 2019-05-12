@@ -1,11 +1,9 @@
 .page-header {
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   right: 0;
   top: 0;
   position: static;
-
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -29,17 +27,19 @@
 }
 
 .page-header__logo {
-  padding:  0 0 10px;
+  padding: 0 0 10px;
   display: inline-block;
 }
 
 .page-header__сontainer {
-
-
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     padding: 48px 20px;
     box-sizing: border-box;
   }
+}
+
+.page-header--open {
+  background-color: #283645;
 }

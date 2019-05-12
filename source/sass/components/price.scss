@@ -12,7 +12,6 @@
   }
 }
 
-
 .price__wrapper {
   overflow: hidden;
   width: 100%;
@@ -21,15 +20,14 @@
   position: relative;
   padding-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
 
-@media (min-width: $tablet-width) {
-  width: 620px;
-}
-
-@media (min-width: $desktop-width) {
-  display: block;
-  width: 100%;
-}
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .price-slider__toggle {
@@ -40,7 +38,6 @@
   height: 6px;
   margin: 0 10px;
   cursor: pointer;
-  border-radius: 50%;
   border: none;
   background-color: #bec2c7;
   padding: 0;
@@ -52,7 +49,7 @@
 }
 
 .price__table {
-      width: 100%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
 
@@ -68,7 +65,7 @@
   min-width: 250px;
   padding: 10px;
   text-align: center;
-  color: #fff;
+  color: $white;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -86,7 +83,6 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     height: 100px;
-
   }
 }
 
@@ -111,7 +107,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 30px;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255);
 
   @media (min-width: $tablet-width) {
     top: 1px;
@@ -120,7 +116,7 @@
 }
 
 .price__name--hit::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -37px;
   left: -44px;
@@ -170,8 +166,6 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   width: 145px;
-
-
 }
 
 .price__row--settings {
@@ -180,7 +174,7 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  background: #fff;
+  background: $white;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {

@@ -29,11 +29,8 @@
 }
 
 .editor__wrapper {
-
   width: 280px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
@@ -125,7 +122,6 @@
   @media (min-width: 660px) {
     width: 200px;
     margin-right: 20px;
-
   }
 
   @media (min-width: 960px) {
@@ -167,12 +163,10 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-right: 0;
     width: 183px;
     border-radius: 30px;
     margin-right: 20px;
   }
-
 }
 
 .editor__pushbutton--send {
@@ -201,8 +195,6 @@
 }
 
 .editor__toggle--crop {
-  @media (min-width: $tablet-width) {}
-
   @media (min-width: $desktop-width) {
     right: 66%;
   }
@@ -222,9 +214,6 @@
   @media (min-width: $tablet-width) {
     right: 33%;
   }
-
-  @media (min-width: $desktop-width) {}
-
 }
 
 .editor__item {

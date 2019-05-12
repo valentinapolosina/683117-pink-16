@@ -9,7 +9,7 @@
 
 .panorama__picture-wrapper::before {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 4%;
   content: "панорама дня";
   padding-left: 20px;
@@ -35,10 +35,8 @@
 }
 
 .panorama__comment {
-
   @media (min-width: $tablet-width) {
     order: 1;
-
   }
 }
 
@@ -50,7 +48,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 620px;
     padding: 10px 27px;
   }
