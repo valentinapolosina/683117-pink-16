@@ -78,7 +78,7 @@
   </header>
   <main class="page-main">
     <section class="page-main__info">
-      <h1 class="page-main__description">Фотографии Пользователей</h1>
+      <h1 class="page-main__description">Фотографии пользователей</h1>
     </section>
     <section class="page-main__photo photo">
       <h2 class="photo__description description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
@@ -406,9 +406,11 @@ console.log('mainNavToggle', mainNavToggle);
 
 pageHeader.classList.remove('page-header--nojs');
 mainNav.classList.remove('main-nav--nojs');
+mainNavToggle.classList.remove('main-nav__toggle--nojs');
 
 mainNavToggle.addEventListener('click', function(e) {
   e.preventDefault();
+  pageHeader.classList.toggle('page-header--open');
   mainNav.classList.toggle('main-nav--open');
   mainNavToggle.classList.toggle('main-nav__toggle--open');
 });

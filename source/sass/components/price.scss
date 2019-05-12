@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 50%;
-  bottom: 6px;
+  left: 53%;
+  bottom: 50px;
   transform: translateX(-50px);
 
   @media (min-width: $tablet-width) {
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 102px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -28,24 +28,6 @@
     display: block;
     width: 100%;
   }
-}
-
-.price-slider__toggle {
-  background: 0 0;
-  border: 0;
-  outline: 0;
-  width: 6px;
-  height: 6px;
-  margin: 0 10px;
-  cursor: pointer;
-  border: none;
-  background-color: #bec2c7;
-  padding: 0;
-}
-
-.price-slider__toggle--active {
-  box-shadow: 0 0 0 3px $dark-blue;
-  background-color: transparent;
 }
 
 .price__table {
@@ -62,8 +44,10 @@
 
 .price__title {
   box-sizing: border-box;
-  min-width: 250px;
+  min-width: 277px;
   padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   text-align: center;
   color: $white;
   font-size: 18px;
@@ -101,8 +85,8 @@
   content: "ХИТ";
   z-index: 1;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 13px;
+  left: 6px;
   transform: rotate(-45deg);
   font-size: 14px;
   font-weight: 700;
@@ -170,7 +154,9 @@
 
 .price__row--settings {
   position: relative;
-  padding: 14px 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 21px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -202,8 +188,8 @@
   position: absolute;
   width: 30px;
   height: 25px;
-  top: 13px;
-  right: 15px;
+  top: 16px;
+  right: 17px;
 
   @media (min-width: $tablet-width) {
     top: 8px;
@@ -225,4 +211,15 @@
 
 .price__row--test {
   border: none;
+}
+
+.price__bg-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.price {
+  position: relative;
+  padding-top: 88px;
 }

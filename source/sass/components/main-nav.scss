@@ -19,6 +19,7 @@
 
     .main-nav__list {
       display: block;
+      margin-top: 13px;
     }
   }
 
@@ -88,16 +89,21 @@
   }
 }
 
-.main-nav__toggle--closed::before {
+.main-nav__toggle--open {
+  top: 22px;
+  right: -4px;
+}
+
+.main-nav__toggle--open::before {
   transform: rotate(45deg);
 }
 
-.main-nav__toggle--closed::after {
+.main-nav__toggle--open::after {
   transform: rotate(-45deg);
 }
 
-.main-nav__toggle--closed::after,
-.main-nav__toggle--closed::before {
+.main-nav__toggle--open::after,
+.main-nav__toggle--open::before {
   content: "";
   position: absolute;
   top: 8px;

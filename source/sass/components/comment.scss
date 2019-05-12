@@ -41,6 +41,8 @@
   width: 281px;
   text-align: center;
   margin: 0;
+  line-height: 30px;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     width: 105%;
@@ -56,8 +58,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
   }
+}
+
+.comment {
+  position: relative;
+  padding-bottom: 76px;
+}
+
+.comment-slider__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 84%;
+  left: 38%;
 }

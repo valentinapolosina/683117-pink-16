@@ -1,0 +1,18 @@
+.toggle {
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #bec2c7;
+  padding: 0;
+  border-radius: 50%
+}
+
+.toggle--active {
+  box-shadow: 0 0 0 3px $dark-blue;
+  background-color: transparent;
+}

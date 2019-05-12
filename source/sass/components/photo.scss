@@ -2,6 +2,8 @@
   padding: 10px;
   padding-left: 38px;
   padding-right: 38px;
+  padding-top: 34px;
+  padding-bottom: 38px;
 
   @media (min-width: $desktop-width) {
     text-align: center;
@@ -22,7 +24,9 @@
 
 .photo__wrapper {
   background-color: $dark-white;
-  padding: 10px;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
   width: 280px;
   box-sizing: border-box;
   flex-grow: 1;
@@ -54,7 +58,8 @@
   font-size: 12px;
   padding: 0;
   margin: 0;
-  padding-left: 5px;
+  text-transform: uppercase;
+  padding-left: 3px;
 }
 
 .photo__username-wrapper {
@@ -71,6 +76,9 @@
   margin: 0;
   padding: 0;
   color: $light-red;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
@@ -88,6 +96,7 @@
   flex-direction: row;
   margin-top: auto;
   align-items: center;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
@@ -98,6 +107,7 @@
 .photo__like-button {
   background: 0 0;
   border: 0;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;

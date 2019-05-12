@@ -37,6 +37,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
+  margin: 0;
+  padding-top: 1px;
 
   @media (min-width: $tablet-width) {
     margin-left: -10px;

@@ -45,7 +45,7 @@
 
 .page-intro__wrapper-picture-and-button {
   width: 100%;
-  margin-top: 177px;
+  margin-top: 175px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -55,7 +55,7 @@
 
 .page-intro__picture {
   display: block;
-  padding-right: 60px;
+  padding-right: 62px;
 
   @media (min-width: $tablet-width) {
     margin-left: -350px;
@@ -73,8 +73,8 @@
   border-radius: 25px;
   border: 3px solid $white;
   padding: 15px;
-  margin-top: 11px;
-  margin-bottom: 9px;
+  margin-top: 12px;
+  margin-bottom: 10px;
   width: 280px;
 }
 
@@ -83,12 +83,13 @@
 }
 
 .page-intro__info {
-  font-weight: 400;
+  font-weight: 300;
   color: $white;
   text-align: center;
-  padding: 5px;
-  width: 300px;
+  padding: 2px;
+  width: 288px;
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .page-intro__header {

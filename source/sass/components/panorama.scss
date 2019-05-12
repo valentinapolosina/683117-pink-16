@@ -10,11 +10,12 @@
 .panorama__picture-wrapper::before {
   position: absolute;
   top: 0;
-  right: 4%;
+  right: 6%;
   content: "панорама дня";
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 19px;
+  padding-right: 21px;
   height: 36px;
+  letter-spacing: 0.4px;
   font-size: 12px;
   line-height: 36px;
   text-transform: uppercase;
@@ -42,7 +43,10 @@
 
 .panorama__wrapper {
   background-color: $dark-white;
-  padding: 10px;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   width: 280px;
   display: flex;
@@ -80,6 +84,7 @@
 .panorama__but-like {
   display: flex;
   align-items: flex-end;
+  padding-top: 9px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -88,7 +93,12 @@
 
 .panorama__activity {
   margin: 0;
-  padding-left: 5px;
+  padding-left: 3px;
   font-weight: 300;
   font-size: 12px;
+  text-transform: uppercase;
+}
+
+.panorama__comment {
+  margin: 0;
 }
