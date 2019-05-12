@@ -329,7 +329,8 @@
     width: 100%;
   }
 
-  @media (min-width: $desktop-width) {;
+  @media (min-width: $desktop-width) {
+    ;
   }
 }
 
@@ -371,7 +372,7 @@
 }
 
 .contest__fieldset--application {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -462,4 +463,3 @@
 .contest__list-item--souvenir {
   order: 3;
 }
-
