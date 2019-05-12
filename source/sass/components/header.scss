@@ -1,5 +1,11 @@
 .page-header {
-  position: relative;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: static;
+
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -23,12 +29,12 @@
 }
 
 .page-header__logo {
-  margin-right: auto;
+  padding:  0 0 10px;
+  display: inline-block;
 }
 
 .page-header__сontainer {
-  background: rgba(0, 0, 0, 0.3);
-  height: 66px;
+
 
   @media (min-width: $desktop-width) {
     display: flex;

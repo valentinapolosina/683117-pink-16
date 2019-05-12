@@ -1,30 +1,35 @@
 .available-list {
   margin: 0;
   padding: 0;
+  margin-top: 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   list-style: none;
-  align-items: center;
-  margin-top: 11px;
+  justify-content: space-between;
+  width: 208px;
+  margin-bottom: 14px;
+  align-items: baseline;
   box-sizing: border-box;
+
 }
 
 .available-list__item {
-  padding: 10px;
-  margin-right: 10px;
+  padding: 0 10px;
+  padding-top: 10px;
+  margin-right: 15px;
 }
 
 .available-list__link--windows {
   display: inline-block;
-  margin-top: 14px;
+  margin-left: 2px;
 }
 
 .available-list__link--android {
-  display: inline-block;
-  margin-top: 11px;
+  margin-right: 4px;
 }
 
-.available-list__link--iphone {
-  margin-top: 5px;
+.available-list__link--iphone {}
+
+.available-list__item--iphone {
+  padding-top: 13px;
+  padding-left: 1px;
 }
