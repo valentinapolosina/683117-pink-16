@@ -14,6 +14,10 @@
     background-color: $dark-blue;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
@@ -38,6 +42,11 @@
 .page-header__logo {
   padding: 0 0 22px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-left: 72px;
+  }
 }
 
 .page-header__сontainer {

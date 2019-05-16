@@ -1,10 +1,13 @@
 .editor__form {
   background-color: $dark-white;
+  padding-bottom: 26px;
 }
 
 .editor__photo {
   text-align: center;
   display: block;
+  padding-right: px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-right: 30px;
@@ -20,6 +23,10 @@
   text-align: center;
   justify-content: space-around;
   align-items: center;
+  margin-top: 33px;
+  width: 232px;
+  margin-left: 38px;
+  margin-bottom: 54px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -29,11 +36,11 @@
 }
 
 .editor__wrapper {
-  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
+    width: 280px;
   }
 }
 
@@ -44,6 +51,10 @@
     padding-left: 14%;
     box-sizing: border-box;
   }
+}
+
+.editor__button--fill-active {
+  padding-left: 0px;
 }
 
 .editor__button {
@@ -99,7 +110,7 @@
 .editor__control {
   position: absolute;
   border-bottom: 1px solid $light-white;
-  top: 100%;
+  top: 125%;
   left: 0;
   right: 0;
 
@@ -131,7 +142,7 @@
 
 .editor__toggle {
   position: absolute;
-  right: 55px;
+  right: 25px;
   top: -5px;
   height: 10px;
   width: 10px;
@@ -172,6 +183,9 @@
 .editor__pushbutton--send {
   color: $light-red;
   border: 3px solid $light-red;
+  margin-top: 38px;
+  padding-right: 90px;
+  margin-bottom: 13px;
 }
 
 .editor__pushbutton--cancel {
@@ -189,6 +203,8 @@
 }
 
 .editor__button-wrapper {
+  border-top: 1px solid #dddfe0;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -219,4 +235,14 @@
 .editor__item {
   display: flex;
   align-items: center;
+}
+
+.editor__description {
+  padding-top: 40px;
+  margin: 0 4px 0 0;
+  padding-bottom: 43px;
+
+  &--one {
+    margin-left: 2px;
+  }
 }

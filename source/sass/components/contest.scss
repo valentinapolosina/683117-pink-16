@@ -9,13 +9,18 @@
     display: flex;
     flex-direction: column;
     border: 2px solid #e5e5e5;
-    margin-bottom: 36px;
-    width: 600px;
+    width: 619px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 15px 0;
     width: 100%;
+  }
+}
+
+.contest__fieldset--emotion {
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
   }
 }
 
@@ -40,6 +45,10 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    width: 616px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -48,24 +57,34 @@
   }
 }
 
+.contest__list--application {
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    padding-bottom: 12px;
+  }
+
+}
+
 .contest__label {
   line-height: 30px;
   font-size: 18px;
   color: #283645;
   cursor: pointer;
+  position: relative;
 }
 
 
 .contest__label-item {
   line-height: 30px;
   font-size: 14px;
-  margin-left: 14px;
+  margin-left: 21px;
   text-transform: uppercase;
   color: #d22856;
 
   @media (min-width: $tablet-width) {
-    margin-right: 14px;
-    margin-left: 30px;
+    margin-right: 19px;
+    margin-left: 0;
   }
 }
 
@@ -75,14 +94,15 @@
   text-align: left;
   position: relative;
   box-sizing: border-box;
-  padding-left: 30px;
-  padding-bottom: 20px;
+  padding-left: 11px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    width: 550px;
+    width: 621px;
+    padding-left: 0;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,30 +110,59 @@
   }
 }
 
+.contest__item--name {
+
+  @media (min-width: $tablet-width) {
+    width: 629px;
+  }
+}
+
+.contest__label-item--information {
+  padding-left: 20px;
+  padding-top: 2px;
+  box-sizing: border-box;
+}
+
 .contest__item--number {
-  padding-bottom: 20px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     padding-top: 3px;
-    padding-bottom: 29px;
+    width: 586px;
+    padding-left: 27px;
+    margin-bottom: 25px;
   }
 }
+
+.contest__input--email {}
+
+.contest__item--email {
+  @media (min-width: $tablet-width) {
+    width: 586px;
+    margin-bottom: 27px;
+    flex-direction: column-reverse;
+    padding-left: 27px;
+  }
+
+}
+
 
 .contest__input {
   width: 278px;
   box-sizing: border-box;
   height: 63px;
   padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 18px;
+  margin-top: 5px;
   border: 2px solid #e5e5e5;
   background-color: transparent;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  padding-left: 19px;
 
   @media (min-width: $tablet-width) {
     width: 90%;
@@ -137,9 +186,9 @@
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
     font-size: 18px;
     width: 500px;
+    margin-top: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -169,22 +218,25 @@
 .contest__legend {
   padding: 36px 35px 0;
   margin: 0 auto;
+  padding-top: 39px;
   line-height: 18px;
   color: $light-red;
   text-align: center;
   text-transform: uppercase;
 
+
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
     margin-bottom: 20px;
+    padding-right: 26px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    padding-top: 3px;
   }
 }
 
-.contest__list-item {
-  padding-left: 86px;
-  margin-bottom: 30px;
-  position: relative;
-  margin-top: 20px;
+.contest__legend--application {
+  margin-bottom: 20px;
+  margin: 0 0 41px;
 }
 
 .contest__checkbox {
@@ -194,8 +246,8 @@
 .contest__checkbox+.contest__label::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: 20px;
+  top: -4px;
+  left: -59px;
   width: 35px;
   height: 35px;
   background-color: $white;
@@ -207,7 +259,7 @@
   display: block;
   position: absolute;
   top: 7px;
-  left: 29px;
+  left: -50px;
   width: 20px;
   height: 8px;
   border-bottom: 2px solid #d22856;
@@ -220,19 +272,49 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding: 0;
+    padding-right: 26px;
+    padding-left: 25px;
   }
+}
+
+.contest__legend--emotion {
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.contest__item-wrapper {
+  margin-top: 10px;
+}
+
+.contest__fieldset--application {
+  margin-bottom: 52px;
 }
 
 .contest__fieldset-wrapper {
   background-color: #f2f2f2;
+  margin-top: 23px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    margin-top: 9px;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.contest__list--journey {
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
+    padding-left: 38px;
+    box-sizing: border-box;
   }
 }
 
@@ -244,6 +326,10 @@
 
 .contest__fieldset--journey {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+  }
 }
 
 .contest__radio {
@@ -253,8 +339,8 @@
 .contest__radio+.contest__label::before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: 21px;
+  top: -7px;
+  left: -1px;
   width: 35px;
   height: 35px;
   background: $white;
@@ -266,23 +352,30 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 32px;
+  left: 11px;
   width: 15px;
   height: 15px;
   background-color: #d22856;
   border-radius: 50%;
 }
 
+.contest__fieldset-wrapper--application {
+  padding-bottom: 3px;
+}
+
 .contest__label--radio {
-  padding-left: 85px;
+  padding-left: 59px;
 }
 
 .contest__item--radio {
-  padding-bottom: 45px;
+  padding: 18px 58px 14px;
+  padding-top: 0;
+  margin-bottom: 32px;
 }
 
 .contest__textarea {
   padding: 15px 20px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -292,9 +385,13 @@
   margin: 0 auto;
   margin-right: auto;
   margin-bottom: 40px;
+  margin-top: 17px;
+  width: 283px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
+    min-height: 195px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -310,6 +407,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 
 
   @media (min-width: $tablet-width) {
@@ -317,11 +415,16 @@
     flex-direction: row;
     align-items: flex-end;
     width: 100%;
+    margin-top: 48px;
   }
 }
 
 .contest__button {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .contest__explain--star {
@@ -397,14 +500,14 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    width: 59px;
-    height: 59px;
+    width: 64px;
+    height: 62px;
     background-color: #e5e5e5;
-    top: 5px;
+    top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 54px;
+    right: 57px;
     position: absolute;
   }
 
@@ -413,12 +516,18 @@
   }
 }
 
+.contest__svg-wrapper--email {
+  right: 57px;
+  height: 60px;
+}
+
 .contest__item-wrapper {
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    width: 587px;
   }
 
   @media (min-width: $desktop-width) {
@@ -427,17 +536,73 @@
 }
 
 .contest__list-item--shark {
-  order: 0;
+  margin-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-top: 0;
+  }
 }
 
 .contest__list-item--beach {
-  order: 2;
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }
 
 .contest__list-item--shack {
-  order: 0;
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }
 
 .contest__list-item--souvenir {
-  order: 3;
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.contest__list-item--turret {
+  margin-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.contest__list-item--hotel {
+  margin-top: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.contest__info {
+  padding-top: 25px;
+  line-height: 30px;
+}
+
+.contest__label--inner {
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+    display: block;
+  }
+}
+
+.contest__form {
+  margin-top: 35px;
+}
+
+.contest__list-item {
+  padding-left: 79px;
+  margin-bottom: 5px;
+  position: relative;
+  margin-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+
 }
