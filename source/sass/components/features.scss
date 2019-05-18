@@ -31,6 +31,8 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
+    line-height: 47px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +73,10 @@
 
 .features__header {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .features__wrapper {
@@ -85,6 +92,11 @@
   margin: 0;
   margin-bottom: 11px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 11px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
@@ -97,6 +109,12 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    margin: 0;
+    text-align: initial;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
@@ -113,6 +131,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    padding-right: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,11 +140,19 @@
 }
 
 .features__item--change {
-  margin-top: 32px;
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    padding-right: 9px;
+  }
 }
 
 .features__item--friends {
-  margin-top: 32px;
+  margin-top: 31px;
+  padding-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 37px;
+  }
 }
 
 .features__item--friends::after {
@@ -146,8 +173,8 @@
     background-repeat: no-repeat;
     width: 282px;
     height: 514px;
-    right: 350px;
-    bottom: -117px;
+    right: 354px;
+    bottom: -58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -230,5 +257,25 @@
   .features__item--mood::after {
     background-image: url("../img/iphone-screen-1-desktop@2x.png");
     background-size: 270px auto;
+  }
+}
+
+.features__info--change {
+  @media (min-width: $tablet-width) {
+    width: 301px;
+  }
+}
+
+.features__info--friends {
+  @media (min-width: $tablet-width) {
+    width: 307px;
+  }
+}
+
+.features__item--mood {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }

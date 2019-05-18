@@ -9,6 +9,11 @@
   margin-bottom: 14px;
   align-items: baseline;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+    margin-bottom: 30px;
+  }
 }
 
 .available-list__item {
@@ -29,4 +34,8 @@
 .available-list__item--iphone {
   padding-top: 14px;
   padding-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
 }

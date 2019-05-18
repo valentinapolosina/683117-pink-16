@@ -140,12 +140,12 @@
             <p class="features__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="features__item features__item--change">
-            <h4 class="features__name">Меняет мир вокруг</h4>
-            <p class="features__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h4 class="features__name features__name--change">Меняет мир вокруг</h4>
+            <p class="features__info features__info--change">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="features__item features__item--friends">
             <h4 class="features__name">Заводит новых друзей</h4>
-            <p class="features__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p class="features__info features__info--friends">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </div>
@@ -176,8 +176,10 @@
     <section class="page-main__comment comment container">
       <h4 class="visually-hidden">Отзывы пользователей</h4>
       <blockquote class="comment__list">
-        <cite class="comment__author">Николай Петров</cite>
-        <span class="comment__information-author">25 лет, водитель трамвая</span>
+        <div class="comment__wrapper">
+          <cite class="comment__author">Николай Петров</cite>
+          <span class="comment__information-author">25 лет, водитель трамвая</span>
+        </div>
         <p class="comment__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
           на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
           фотографии!»
@@ -212,12 +214,12 @@
           <thead>
             <tr class="price__row price__row--test">
               <td class="price__title price__name price__name--hidden visually-hidden">Тариф</td>
-              <td class="price__title price__name">База
+              <td class="price__title price__name"> <span class="price__span"> База </span>
                 <span class="price__cost">1,99 USD</span></td>
-              <td class="price__title price__name price__name--hit">Стандарт
+              <td class="price__title price__name price__name--hit"><span class="price__span"> Стандарт</span>
                 <span class="price__cost">3,99 USD</span></td>
-              <td class="price__title price__name">Анлим
-                <span class="price__cost">3,99 USD</span></td>
+              <td class="price__title price__name"> <span class="price__span"> Анлим </span>
+                <span class="price__cost">9,99 USD</span></td>
             </tr>
           </thead>
           <tr class="price__row">
@@ -312,7 +314,7 @@
             <h6 class="contacts__title contacts__title--email">Пишите:</h6>
             <a class="contacts__info contacts__info--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <h6 class="contacts__title contacts__title--address">Приезжайте в гости:</h6>
             <p class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</p>
           </li>
@@ -320,8 +322,8 @@
       </div>
     </section>
     <section class="page-main__map map">
-      <svg class="map__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
-        <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 " />
+      <svg class="map__triangle" viewBox="0 0 596 62" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <polygon fill="#FFFFFF" id="Path" points="297.64 61.905 0 0 595.28 0"></polygon>
       </svg>
       <picture class="map__picture">
         <source type="../image/webp" media="(min-width: 960px)" srcset="../img/bg-map-desktop@1x.webp 1x, ../img/bg-map-desktop@2x.webp 2x">

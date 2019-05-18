@@ -21,7 +21,7 @@
   padding-bottom: 102px;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,8 +37,7 @@
 
   @media (min-width: $tablet-width) {
     transform: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 4px;
   }
 }
 
@@ -58,10 +57,12 @@
   border: 2px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 5px;
+    padding: 6px;
     min-width: 0;
     height: 80px;
     font-size: 16px;
+    padding-top: 7px;
+    padding-left: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +76,10 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .price__name--hit {
@@ -94,8 +99,8 @@
   color: rgb(255, 255, 255);
 
   @media (min-width: $tablet-width) {
-    top: 1px;
-    left: 5px;
+    top: 2px;
+    left: 6px;
   }
 }
 
@@ -113,9 +118,11 @@
   border-color: transparent transparent $light-red;
 
   @media (min-width: $tablet-width) {
-    top: -45px;
+    top: -42px;
     left: -41px;
-    width: 23px;
+    width: 28px;
+    height: 29px;
+    border-width: 27px;
   }
 }
 
@@ -135,7 +142,10 @@
     border-left: 2px solid #e5e5e5;
     width: 140px;
     padding: 7px 15px;
+    padding-left: 12px;
     box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,14 +186,6 @@
   position: relative;
 }
 
-.price__svg--on {
-  fill: #3dc644;
-}
-
-.price__svg--off {
-  fill: #f25b26;
-}
-
 .price__svg {
   position: absolute;
   width: 30px;
@@ -201,6 +203,21 @@
     right: 98px;
   }
 }
+
+.price__svg--on {
+  fill: #3dc644;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: 59px;
+  }
+}
+
+.price__svg--off {
+  fill: #f25b26;
+  right: 61px;
+}
+
 
 .price__settings-name {
 

@@ -20,6 +20,10 @@
 
 .page-footer--index {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__logo-link {

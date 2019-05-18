@@ -1,6 +1,17 @@
 .map__triangle {
   position: absolute;
-  top: -14px;
+  top: 0;
   width: 100%;
   right: 0;
+}
+
+.map {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.map__picture {
+  width: 100%;
+  object-position: 0 -400px;
 }

@@ -3,7 +3,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-color: $dark-white;
   }
 }
 
@@ -28,6 +27,8 @@
   font-size: 14px;
   line-height: 24px;
   width: 296px;
+  margin-top: 10px;
+  margin-bottom: 11px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
@@ -44,13 +45,12 @@
 }
 
 .analysis__item {
-  padding: 20px;
   display: flex;
   position: relative;
   flex-direction: row-reverse;
   width: 660px;
   margin: 0 auto;
-  align-items: center;
+  margin-top: -1px;
 }
 
 .analysis__svg {
@@ -58,5 +58,7 @@
 }
 
 .analysis__item--wrapper {
-  margin-left: auto;
+  margin-left: 48px;
+  padding-right: 35px;
+  margin-top: 38px;
 }

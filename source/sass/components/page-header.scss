@@ -47,13 +47,18 @@
     padding-top: 17px;
     padding-left: 72px;
   }
+
+  @media (min-width:  $tablet-width) {
+    padding-top: 21px;
+    padding-left: 181px;
+
+  }
 }
 
 .page-header__сontainer {
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    padding: 48px 20px;
     box-sizing: border-box;
   }
 }
