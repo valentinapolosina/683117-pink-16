@@ -4,7 +4,7 @@
   align-items: center;
   position: absolute;
   left: 53%;
-  bottom: 50px;
+  bottom: 53px;
   transform: translateX(-50px);
 
   @media (min-width: $tablet-width) {
@@ -164,8 +164,8 @@
 
 .price__row--settings {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   padding-left: 21px;
   font-size: 14px;
   line-height: 30px;
@@ -215,7 +215,10 @@
 
 .price__svg--off {
   fill: #f25b26;
-  right: 61px;
+
+  @media (min-width: $tablet-width) {
+    right: 61px;
+  }
 }
 
 
