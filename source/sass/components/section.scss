@@ -80,6 +80,10 @@
 
 .page-main__features {
   padding-top: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+  }
 }
 
 .page-main__analysis {

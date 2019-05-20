@@ -12,6 +12,10 @@
     margin-top: 12px;
     padding-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+     margin-left: 235px;
+  }
 }
 
 .social-list__svg {
@@ -34,4 +38,11 @@
   height: 45px;
   border-radius: 50%;
   border: 3px solid #e9ebec;
+}
+
+.social-list__item {
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

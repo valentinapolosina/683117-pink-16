@@ -113,8 +113,15 @@
 .contest__item--name {
 
   @media (min-width: $tablet-width) {
-    width: 629px;
+
   }
+}
+
+.ontest__input--name {
+  @media (min-width: $tablet-width) {
+   width: 91%;
+  }
+
 }
 
 .contest__label-item--information {
@@ -414,8 +421,8 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
-    width: 100%;
     margin-top: 48px;
+    width: 100%;
   }
 }
 
@@ -489,6 +496,18 @@
 .contest__fieldset-wrapper--journey {
   @media (min-width: $tablet-width) {
     order: 0;
+  }
+}
+
+.contest__fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.contest__fieldset-wrapper-nogrey {
+    @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 

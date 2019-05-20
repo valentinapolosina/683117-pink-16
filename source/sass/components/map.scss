@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     height: 373px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 473px;
+  }
 }
 
 .map__picture {
@@ -20,9 +24,14 @@
 }
 
 .map__img {
+  width: 100%;
   display: block;
   margin: 0 auto;
   object-position: 0 -445px;
+
+  @media (min-width: $tablet-width) {
+    object-position: -20px -348px;
+  }
 }
 
 .map__img::before {

@@ -33,10 +33,10 @@
 
 .main-nav__list {
   display: none;
-  position: absolute;
+  /* position: absolute;
   right: 0;
   top: 100%;
-  left: 0;
+  left: 0;*/
   z-index: 1;
 
 
@@ -121,14 +121,16 @@
 
 .main-nav__list {
   display: none;
-  top: 56px;
-  left: 0;
-  position: absolute;
-  right: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
     position: static;
+    padding-left: 103px;
+    padding-top: 6px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 663px;
   }
 
   &--open {
@@ -138,6 +140,9 @@
     @media (min-width: $desktop-width) {
       display: flex;
       position: static;
+      padding-left: 103px;
+      padding-top: 6px;
+      margin-right: 40px;
     }
   }
 }
